@@ -97,57 +97,24 @@ NORMALIZE.css
 		position: relative;
 	}
 
-	.fadeIn {
-	
-		-webkit-animation:fadeIn ease-in 1;
-		-moz-animation:fadeIn ease-in 1;
-		-ms-animation:fadeIn ease-in 1;
-		-o-animation:fadeIn ease-in 1;
-		animation:fadeIn ease-in 1;
-
-		-webkit-animation-fill-mode:forwards;
-		-moz-animation-fill-mode:forwards;
-		-ms-animation-fill-mode:forwards;
-		-o-animation-fill-mode:forwards;
-		
-
-		-webkit-animation-duration: 1s;
-		-moz-animation-duration: 1s;
-		-ms-animation-duration: 1s;
-		-o-animation-duration: 1s;
-		animation-duration: 1s;
-	}
-	
-	@-webkit-keyframes fadeIn {
-		0% {
-			opacity: 0;
-		}
-
-		100% {
-			opacity: 1;
-		}
-	}
-
 	/* ===== HOME ===== */
 
 	.hero {
 		background: #fff;
-		padding: 3.2em;
+		padding: 2.4em;
 		text-align: center;	
 	}
 
 	.hero h1 {
-		color: #bdc3c7;
+		color: #2c3e50;
 	}
 
 	.intro {
-		background: url('../img/glenwood.jpg') 20% 20% no-repeat;
+		background: url('../img/glenwood.jpg') 50% 0 no-repeat;
 		background-attachment: fixed;
-		background-size:cover;
 	}
 
 	.intro-inner {
-		max-width: 20em;
 		margin: 0 auto;
 		color: #fff;
 		text-align: center;
@@ -160,7 +127,6 @@ NORMALIZE.css
 		position: absolute;
 		padding: 20px;
 	}
-
 	
 
 	/* ===== WORK ===== */
@@ -175,47 +141,99 @@ NORMALIZE.css
 	
 	.about {
 		padding-top: 3.2em;
+		color: #BB803B;
+		background: #100c24;
+	}
+
+	.social-icons {
+		
+		margin: 0 auto;
+		padding-bottom: 3.2em;
+		text-align: center;
 	}
 	
+	.social-icons li {
+		display: inline-block;
+		margin: 0 .8em;
+		opacity: .8;
+	}
+
+	.social-icons li:hover {
+		opacity: 1;
+	}
+
+	footer {
+		background:white;
+	}
 	
 	/*===== Text Styles =====*/
 
 	.text-lrg {
 		font-size: 2.2em;
 		line-height: 1.1;
-		padding-bottom: .6em;
+		padding-bottom: .8em;
 		font-weight: 300;
+		letter-spacing: 1px;
 	}
 
 	.text-med {
 		font-size: 1.2em;
-		padding: 1.6em 0;
 		font-weight: 400;
+		padding: 1.6em;
+		font-family: "museo";
+		line-height: 1.1;
+		opacity: .9;
+		color: #2c3e50;
+	}
+
+	.graph-text {
+		font-size: 1.3em;
+		line-height: 1.6;
+		padding: 1.6em 0;
+		font-weight: 200;
+		font-family: "museo";
+	}
+
+	.email-text {
+		font-weight: 400;
+		text-align: center;
+		font-size: 1.4em;
+		padding: .8em 0 1.6em 0;
+	}
+
+	.copyright {
+		color: #2c3e50;
+		text-align: center;
+	}
+
+	.about-header {
+		font-weight: 300;
+		text-transform: uppercase;
 	}
 
 
 	/*===== Misc. Styles =====*/
 
 	.character {
-		font-size: 20px;
+		font-size: 14px;
 		position: relative;
-		opacity: .3;
+		display: block;
+		margin-top: -15px;
+		color: #BB803B;
 	}
 
 	.character-inner {
-		font-size: 20px;
+		font-size: 2em;
 		font-family: 'Yellowtail', cursive;
+		display: block;
+		padding: 1.6em 0;
 	}
 
 	label {
 		cursor: pointer;
 	}
 
-	.down {
-		padding-top: 3.2em;
-	}
-
-	#work-open, #close {
+	#about-open, #work-open, #close {
 		display: none;
 	}
 
@@ -233,11 +251,25 @@ NORMALIZE.css
 		padding: 0 1.6em;
 	}
 
+	.hidden {
+		display: none;
+	}
+
+	.opacity {
+		opacity: .5;
+	}
+
 	/*===== Images =====*/
 
 	.half img {
-		max-width: 50%;
+		
 		float: left;
+		 -webkit-filter: grayscale(1);
+	}
+
+	.half img:hover {
+		 -webkit-filter: grayscale(0);
+		 -webkit-transition:.2s linear;
 	}
 
 
@@ -279,6 +311,37 @@ NORMALIZE.css
 	float: right; 
 	}
 
+		.fadeIn {
+	
+		-webkit-animation:fadeIn ease-in 1;
+		-moz-animation:fadeIn ease-in 1;
+		-ms-animation:fadeIn ease-in 1;
+		-o-animation:fadeIn ease-in 1;
+		animation:fadeIn ease-in 1;
+
+		-webkit-animation-fill-mode:forwards;
+		-moz-animation-fill-mode:forwards;
+		-ms-animation-fill-mode:forwards;
+		-o-animation-fill-mode:forwards;
+		
+
+		-webkit-animation-duration: 1s;
+		-moz-animation-duration: 1s;
+		-ms-animation-duration: 1s;
+		-o-animation-duration: 1s;
+		animation-duration: 1s;
+	}
+	
+	@-webkit-keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
 	
 	/* ====== MAIN ====== */
 
@@ -288,21 +351,52 @@ NORMALIZE.css
 
 	.hero {
 		margin: 0 auto;
-		max-width: 40em;
+		padding: 10em;
 	}
 
 	.intro {
 		background: url('../img/glenwood.jpg');
 		background-size:cover;
 		background-attachment: fixed;
-		padding: 8em 0;
+		position: relative;
 	}
 
 	.intro-inner {
-		max-width: 45em;
+		max-width: 50em;
 		margin: 0 auto;
 		color: #fff;
 		text-align: center;
+	}
+
+	nav {
+		position: absolute;
+		top: 5%;
+		right: 5%;
+	}
+
+	.menu {
+		padding: 2em;
+	}
+
+	.menu h1 {
+		font-size: 1.2em;
+		font-family: 'museo';
+		font-weight: 500;
+		color: white;
+		margin: 1em 0;
+		padding: 1em;
+	}
+
+	.menu h1:first-child {
+		
+		border-top: 2px solid white;
+		border-left: 2px solid white;
+	}
+
+	.menu h1:last-child {
+	
+		border-right: 2px solid white;
+		border-bottom: 2px solid white;
 	}
 
 	/* ===== Work ===== */
@@ -338,35 +432,76 @@ NORMALIZE.css
 	}
 
 	/*===== ABOUT =====*/
-
-	.about-graph {
-		padding-top: 4.8em;
+	
+	.about {
+		position: fixed;
+	  	bottom:-100%;
+ 		text-align: left;
+		margin: 0 auto;
+		height: 70%;
+		width: 100%;
+		padding:50px;
+		background: white;
+ 		-webkit-transition:.4s ease-in-out;
 	}
 
-	.about-graph p {
-
+	#about-open:checked ~ .container .about{
+		bottom:0;
+		z-index: 1;
+		-webkit-transition:.4s ease-in-out;
 	}
+
+	#about-open:checked ~ .container .intro-inner {
+		padding-top:400px;
+		-webkit-transition:.4s ease-in-out;
+	}
+
+	#about-close {
+		position: absolute;
+		right: 5%;
+		top: 5%;
+	}
+
 
 	
 	/*===== Text Styles =====*/
 
 	.text-lrg {
-		font-size: 5em;
+		font-size: 4.8em;
 		line-height: 1.1;
-		padding-bottom: .6em;
 		font-weight: 200;
 	}
 
 	.text-med {
 		font-size: 2em;
 		font-weight: 400;
-		padding: 1.6em 2em;
+		font-family: "museo";
+		line-height: 1.2;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	.graph-text {
+		font-size: 1.2em;
+		line-height: 1.6;
+		padding: 1.6em 0;
+		font-weight: 300;
+		font-family: "museo";
+		color: #2c3e50;
+	}
+
+	.email-text {
+		font-size: 3em;
 	}
 
 	/*===== Image Styles =====*/
 
 	.half img {
-		max-width: 30%;
+		max-width: 75%;
+	}
+
+	.me {
+		margin-left:100px;
 	}
 
 	
@@ -374,17 +509,23 @@ NORMALIZE.css
 
 	
 	.down {
-		padding-top: 6em;
+		padding-top: 1.6em;
 	}
 
 	.character {
 		font-size: 20px;
 		display: block;
+		margin-top: -33px;
 	}
 
 	.character-inner {
-		font-size: 40px;
+		font-size: 3.2em;
 		font-family: 'Yellowtail', cursive;
+		padding: .8em 0;
+	}
+
+	.hidden {
+		display: block;
 	}
 }
 

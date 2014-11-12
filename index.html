@@ -16,7 +16,8 @@
 
 <!--openers-->
 <input type="radio" id="work-open" name="toggle" value="overlay">
-	
+<input type="radio" id="about-open" name="toggle" value="overlay">
+
 <!--closers-->
 <input type="radio" id="close" name="toggle" value="overlay">
 
@@ -29,27 +30,61 @@
 			
 			<section class="hero">
 				<h1 class="text-lrg">Standing up for the user's best interests.</h1>
-					<span class="character">………………………………………………</span>
-					<span class="character">………………………………………………</span>
-				<h2 class="text-med">Matt Gelfand is a UX designer proficient in front-end code.</h2>
+					<span class="character">…………………………</span>
+					<span class="character">…………………………</span>
+				<h2 class="text-med">Matt Gelfand is a thoughtful UX designer proficient in front-end code.</h2>
+
+				<div class="down">
+					<a href="#"><img src="img/expand22.png" /></a>
+				</div>
 			</section>
 			 
 			<section class="intro">
-				<div class="intro-inner">
-					<span class="character-inner">Crafting Beautiful Interfaces</span>
+
+				<!--ABOUT OVERLAY-->
+				<div class="row clearfix about">
+					<div class="column third">
+						<picture>
+	 						<source srcset="img/about-img.png" media="(min-width: 1000px)">
+							<source srcset="img/about-img.png" media="(min-width: 800px)">
+	 						<img class="me" srcset="img/about-img-small.png" alt="">
+						</picture>
+					</div>
 					
-					<span class="character-inner">For Web, Mobile and Desktop</span>
 					
-					<div class="down">
-						<a href="#"><img src="img/expand22.png" /></a>
+					<div class="column two-thirds">
+					<label for="close" id="about-close">✕</label>
+						<h1 class="about-header">Oh, hello</h1>
+						<p class="graph-text"> I devise, design and occasionally develop smart and accessibile user experiences. I then shifted my focus to UX at an agency that's been a pioneer of the discipline for nearly a decade. Give me a project I'm passionate about, and I will relentlessly tinker until both the design and code are sound and aesthetically pleasing. I believe in building hastily and failing early, because the best ideas are never your first. Other mantras: Steal like an artist, don't make users think, and always have a plan - without one you have no destination, which means you can never arrive.</p>
 					</div>
 				</div>
+
+
+
+				<div class="intro-inner">
+					<span class="character-inner hidden">⤫</span>
+					<span class="character-inner">Crafting Beautiful Interfaces</span>
+						<picture>
+ 						<source srcset="img/devices-lrg.png" media="(min-width: 1000px)">
+						<source srcset="img/devices-lrg.png" media="(min-width: 800px)">
+ 						<img srcset="img/devices-lrg.png" alt="">
+						</picture>
+					<span class="character-inner">With Device-Independent Functionality</span>
+					<span class="character-inner hidden">⤫</span>
+				</div>
+
+				<nav>
+					<div class="menu">
+						<h1>projects</h1>
+						<h1><label for="about-open">about</label></h1>
+					</div>
+				</nav>
 			</section>
 			
 
 			<section class="main">
 
-				<div class="row clearfix work-area">
+				<!--<div class="row clearfix work-area">
 					<div class="column full">
 						<picture class="half">
 						 	<a href="#">
@@ -100,25 +135,32 @@
 								<img srcset="img/sprint-img.jpg" alt="">
 							</a>
 						</picture>
-					</div><!--column-->
-				</div><!--row-->
-
-				<div class="row clearfix about">
-					<div class="column full contain">
-						<h1 class="text-lrg">Matt Gelfand</h1>
-						<p class="graph-text"> I devise, design and occasionally develop smart and accessibile user experiences. A writer in a former life, I earned a master's degree from Northwestern's Medill School of Journalism where I specialized in interactive publishing, subsequently learning to code in the process. I cut my teeth at a software lab helping to design apps to make journalist's lives' easier. I then shifted my focus to UX at an agency that's been a pioneer of the discipline for nearly a decade. 
-
-						Give me a project I'm passionate about, and I will relentlessly tinker until both the design and code are sound and aesthetically pleasing. I believe in building hastily and failing early, because the best ideas are never your first. Other mantras: Steal like an artist, don't make users think, and always have a plan - without one you have no destination, which means you can never arrive.</p>
 					</div>
-				</div>
+				</div>-->
 			</section><!--main-->
 
+		
+
+				<footer class="row clearfix contain">
+					<div class="column full">
 					
+					<p class="email-text"><a href="mailto:matthew.gelfand@gmail.com?subject=Let's build something great">matthew.gelfand<span class="opacity">@</span>gmail.com</a></p>
 
 
-
-
-
+						<div class="social-icons">
+							<ul>
+								<li><a href="#"><img src="img/icon-github.png" alt=""></a></li>
+								<li><a href="#"><img src="img/icon-twitter.png" alt=""></a></li>
+								<li><a href="#"><img src="img/icon-dribbble.png" alt=""></a></li>
+								<li><a href="#"><img src="img/icon-linkedin.png" alt=""></a></li>
+							</ul>
+						</div>
+						
+						<p class="copyright">© 2014 Matt Gelfand</p>
+						
+					</div>
+				</footer>	
+			
 
 					<!--<div class="column half work">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et fugit aspernatur, ea voluptatibus cumque veniam soluta aliquid maxime temporibus explicabo. Tempora laborum maiores, illo aliquid unde, vel ipsa veniam sit.</p>
