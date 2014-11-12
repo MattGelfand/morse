@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>...</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=600, initial-scale=1">
 <link rel='stylesheet' href='css/style.css'/>
 <script src="//use.typekit.net/oyg1ukm.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
@@ -19,14 +19,11 @@
 <input type="radio" id="about-open" name="toggle" value="overlay">
 
 <!--closers-->
+<input type="radio" id="close-again" name="toggle" value="overlay">
 <input type="radio" id="close" name="toggle" value="overlay">
 
 	<div class="container" id="top">
 		<div class="page-content fadeIn">
-
-			<!--<div class="home-link">
-				<a href="#top">Home</a>
-			</div>-->
 			
 			<section class="hero">
 				<h1 class="text-lrg">Standing up for the user's best interests.</h1>
@@ -35,34 +32,13 @@
 				<h2 class="text-med">Matt Gelfand is a thoughtful UX designer proficient in front-end code.</h2>
 
 				<div class="down">
-					<a href="#"><img src="img/expand22.png" /></a>
+					<a href="#primary-screen"><img src="img/expand22.png" /></a>
 				</div>
 			</section>
 			 
 			<section class="intro">
-
-				<!--ABOUT OVERLAY-->
-				<div class="row clearfix about">
-					<div class="column third">
-						<picture>
-	 						<source srcset="img/about-img.png" media="(min-width: 1000px)">
-							<source srcset="img/about-img.png" media="(min-width: 800px)">
-	 						<img class="me" srcset="img/about-img-small.png" alt="">
-						</picture>
-					</div>
-					
-					
-					<div class="column two-thirds">
-					<label for="close" id="about-close">✕</label>
-						<h1 class="about-header">Oh, hello</h1>
-						<p class="graph-text"> I devise, design and occasionally develop smart and accessibile user experiences. I then shifted my focus to UX at an agency that's been a pioneer of the discipline for nearly a decade. Give me a project I'm passionate about, and I will relentlessly tinker until both the design and code are sound and aesthetically pleasing. I believe in building hastily and failing early, because the best ideas are never your first. Other mantras: Steal like an artist, don't make users think, and always have a plan - without one you have no destination, which means you can never arrive.</p>
-					</div>
-				</div>
-
-
-
-				<div class="intro-inner">
-					<span class="character-inner hidden">⤫</span>
+				<div class="intro-inner" id="primary-screen">
+					<span class="character-inner hidden"><label for="close" id="flipping-cross">⤫</label></span>
 					<span class="character-inner">Crafting Beautiful Interfaces</span>
 						<picture>
  						<source srcset="img/devices-lrg.png" media="(min-width: 1000px)">
@@ -75,10 +51,83 @@
 
 				<nav>
 					<div class="menu">
-						<h1>projects</h1>
+						
+						<div class="accordion">
+							<section>
+								<h1>projects</h1>
+								<div class="accordion-content">
+									<ul>
+										<li><label for="work-open">looped-in / 2014 /</label></li>
+										<li>espn onboarding / 2014 /</li>
+									</ul>
+								</div>
+							</section>
+						</div>
+
 						<h1><label for="about-open">about</label></h1>
 					</div>
 				</nav>
+
+				<!--PROJECT OVERLAY-->
+				<div class="row clearix work">
+					<div class="column full">
+						
+						<div class="looped-splash">
+							<picture class="splash-img">
+	 							<source srcset="img/looped-in-splash.jpg" media="(min-width: 600px)">
+								<source srcset="img/looped-in-splash-small.jpg" media="(min-width: 100px)">
+	 							<img srcset="img/looped-in-splash-small.jpg" alt="">
+							</picture>
+						</div>
+
+						<div class="work-nut contain">
+							<h1 class="text-lrg">Looped In</h1>
+							<p class="graph-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio fugit dicta, facilis amet numquam aliquam aut eos reprehenderit praesentium dolore perferendis et doloribus rerum odit ad ab excepturi doloremque sint? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo amet odio, neque id doloribus, animi vel quis dolor corrupti porro ad nobis beatae deleniti, libero adipisci. Nobis impedit optio, quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repudiandae a officiis eum tempore culpa dicta distinctio consequuntur mollitia fugiat voluptatem repellat nobis, iste rerum possimus nisi, fuga dignissimos. Aliquam.</p>
+						</div>
+						
+						<div class="work-area">
+							<figure class="half">
+								<img src="img/img-loopedin-1.png" alt="">
+							</figure>
+
+							<figure class="half">
+								<img src="img/img-loopedin-1.png" alt="">
+							</figure>
+						</div>
+			
+						
+					</div>
+				</div>
+
+				
+
+
+
+
+
+
+
+
+
+				<!--ABOUT OVERLAY-->
+				<div class="row clearfix about">
+					<div class="column half">
+						<picture>
+	 						<source srcset="img/about-img.png" media="(min-width: 1000px)">
+							<source srcset="img/about-img.png" media="(min-width: 800px)">
+	 						<img class="me" srcset="img/about-img-small.png" alt="">
+						</picture>
+					</div>
+					
+					
+					<div class="column third">
+					<label for="close" id="about-close">✕</label>
+						<h1 class="about-header">The Skinny</h1>
+						<p class="graph-text"> I devise, design and occasionally develop smart and accessibile user experiences. 
+							I then shifted my focus to UX at an agency that's been a pioneer of the discipline for nearly a decade. Give me a project I'm passionate about, and I will relentlessly tinker until both the design and code are sound and aesthetically pleasing. I believe in building hastily and failing early, because the best ideas are never your first. Other mantras: Steal like an artist, don't make users think, and always have a plan - without one you have no destination, which means you can never arrive.</p>
+					</div>
+				</div>
+				<!--END ABOUT OVERLAY-->
 			</section>
 			
 
@@ -141,52 +190,25 @@
 
 		
 
-				<footer class="row clearfix contain">
-					<div class="column full">
-					
-					<p class="email-text"><a href="mailto:matthew.gelfand@gmail.com?subject=Let's build something great">matthew.gelfand<span class="opacity">@</span>gmail.com</a></p>
+			<footer class="row clearfix contain">
+				<div class="column full">
+				
+				<p class="email-text"><a href="mailto:matthew.gelfand@gmail.com?subject=Let's build something great">matthew.gelfand<span class="opacity">@</span>gmail.com</a></p>
 
 
-						<div class="social-icons">
-							<ul>
-								<li><a href="#"><img src="img/icon-github.png" alt=""></a></li>
-								<li><a href="#"><img src="img/icon-twitter.png" alt=""></a></li>
-								<li><a href="#"><img src="img/icon-dribbble.png" alt=""></a></li>
-								<li><a href="#"><img src="img/icon-linkedin.png" alt=""></a></li>
-							</ul>
-						</div>
-						
-						<p class="copyright">© 2014 Matt Gelfand</p>
-						
-					</div>
-				</footer>	
-			
-
-					<!--<div class="column half work">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et fugit aspernatur, ea voluptatibus cumque veniam soluta aliquid maxime temporibus explicabo. Tempora laborum maiores, illo aliquid unde, vel ipsa veniam sit.</p>
-						<h1 class="closure"><label for="close">close</label></h1> 
-					</div>
-
-					<div class="column half">
-						<h1><label for="work-open">work</label></h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem accusamus illum, nostrum quasi eveniet, doloremque, minus error, consectetur aut praesentium inventore provident sed reprehenderit iste nam aperiam! Provident dolore, vel.</p>
+					<div class="social-icons">
+						<ul>
+							<li class="push"><a href="#"><img src="img/icon-github.png" alt=""></a></li>
+							<li class="push"><a href="#"><img src="img/icon-twitter.png" alt=""></a></li>
+							<li class="push"><a href="#"><img src="img/icon-github.png" alt=""></a></li>
+							<li class="push"><a href="#"><img src="img/icon-linkedin.png" alt=""></a></li>
+						</ul>
 					</div>
 					
-					<div class="column half">
-						<div class="column half about-graph">
-							<p>I'm a UX designer with front-end chops raised in New Jersey residing in Boston. A writer in a former life, I recently earned a master's degree in interctive publishing from <a href="http://www.medill.northwestern.edu/msj/">this fine institution</a>. I cut my teeth at a <a href="http://knightlab.northwestern.edu/"></a> helping to design apps to make journalists' lives easier. I then shifted my focus to UX at <a href="www.freshtilledsoil.com"></a> that's been a pioneer of the discipline for over a decade.
-
-							I have a passion for manipulating the web and believe in the philosophy of building hastily and failing early, because your best idea is never your first. Other mantras: Steal like an artist, don't make users think, and always have a plan - without one you have no destination, which means you can never arrive.</p>
-						</div>
-
-						<div class="column half">
-							<p>img</p>
-						</div>
-					</div>
-
-				</div><!-row-->
-			
-						
+					<p class="copyright">© 2014 Matt Gelfand</p>
+					
+				</div>
+			</footer>	
 			
 
 			<!--==========overlay===========-->
@@ -197,7 +219,7 @@
 	</div><!--container-->
 	
 	<div class="arrow-holder"></div>
-		<a class="to-top" href="#top"><img src="img/back-to-top.png" alt="up arrow that brings user back to top of page" /></a>
+		<a class="to-top float" href="#top"><img src="img/back-to-top.png" alt="up arrow that brings user back to top of page" /></a>
 	</div>
 
 <script src="js/plugins.js"></script>
