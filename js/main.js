@@ -2,24 +2,33 @@
 
 
 
+
+/* Smooth Scrollage */
+
 $('a').smoothScroll();
 
 
 
-
-
-
-
+/* Owl Slider */
 $(document).ready(function() {
  
-  $("#owl-demo").owlCarousel({
- 
-      
- 
-      items : 4,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3]
+  $("#work-slider-inner").owlCarousel({
+      items : 2,
+      lazyLoad : true,
+      pagination : true
  
   });
  
+});
+
+
+/* Sticky Header */
+
+$(window).scroll(function() {
+	if ($(this).scrollTop() > 1){  
+$('header').addClass("sticky");
+  }
+  else{
+    $('header').removeClass("sticky");
+  }
 });

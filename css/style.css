@@ -83,7 +83,7 @@ NORMALIZE.css
 /*===================================== MAIN MOBILE STYLES ======================================*/
 
 	html { 
-		 font-family: "omnes-pro";
+		 font-family: "livory", sans-serif;
 		 min-height: 100%;
 	}
 
@@ -100,41 +100,66 @@ NORMALIZE.css
 	/* ===== HOME ===== */
 
 	.hero {
-		background: #fff;
-		padding: 2.4em;
-		text-align: center;	
+		text-align: left;	
 	}
 
 	.hero h1 {
 		color: #2c3e50;
+		font-size: 9em;
+		max-width: 200px;
+	}
+
+	.hero-text-holder {
+		padding: 2em;
+	}
+
+	header {
+		position: fixed;
+		width: 100%;
+		top:0;
+		background: transparent;
+		transition: all 0.4s ease;
+		z-index: 1;
+		-webkit-backface-visibility: hidden;
+		font-size: 12px;
+		height: 10%;
+		font-family: 'bebas-neue', sans-serif;
+	}
+
+	header a {
+		color: #335C7D;
+		display: none;	
+	}
+
+	header.sticky a {
+		display: block;
+		color: black;
+		 
+	}
+
+	header.sticky  {
+		font-size: 24px;
+		text-align: left;
+		padding: 20px; 
+		transition: all 0.4s ease;
+		z-index: 1;
+		-webkit-backface-visibility: hidden;
+		background:#335C7D;
 	}
 
 	.transition-screen {
  		background: url('../img/glenwood.jpg') no-repeat 0 0;
 		text-align: center;
-		background-attachment: fixed;
-		background-size:cover;
+ 		background-size:cover;
 		height: 300px;
+		-webkit-backface-visibility: hidden;
 	}
 
-	.transition-screen:after {
-		content: ' ';
-		position: absolute;
-		top:77%;
-		left:50%; 
-		width: 10px;
-		height: 10px;
-		margin-left: -18px; 
-		
-		display: block;
-		-webkit-transform:rotate(180deg); 
-		border-left: 16px solid transparent;
-		border-right: 16px solid transparent;
-		border-top: 16px solid #fff;
-		
+	.transition-screen-container {
+
 	}
 
-	.transition-screen:before {
+	/*.main-screen:before {
 		content: ' ';
 		position: absolute;
 		top:55.1%;
@@ -142,39 +167,27 @@ NORMALIZE.css
 		width: 10px;
 		height: 10px;
 		margin-left: -18px;
-		
 		display: block;
-	
 		border-left: 16px solid transparent;
 		border-right: 16px solid transparent;
-		border-top: 16px solid #fff;
-		
+		border-top: 16px solid #222;
 	}
 
 	.main {
 		min-height: 100vh;
+		/*background: url('../img/subtle_dots.png') repeat 0 0;*/
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	.intro {
-		margin: 0 auto;
-		background: url('../img/subtle_dots.png') repeat 0 0;
+	.effect-work, .effect-process {
+		font-weight: 200;
+		text-transform: uppercase;
 		text-align: center;
+		font-size: 30px;
+		position: relative;
+		top:35%;
+		z-index: 1;
+		color:#BB803B;
+		-webkit-transition:.1s linear;
 	}
 
 	.home-link {
@@ -223,11 +236,10 @@ NORMALIZE.css
 
 	/* ===== ABOUT ===== */
 	
-	.about {
-		padding-top: 3.2em;
-		color: #fff;
-		background: #fff;
-	}
+
+	
+
+	/*===== FOOTER ===== */
 
 	.social-icons {
 		margin: 0 auto;
@@ -247,7 +259,7 @@ NORMALIZE.css
 	}
 
 	footer {
-		background:white;
+		background:transparent;
 	}
 	
 	/*===== Text Styles =====*/
@@ -258,25 +270,16 @@ NORMALIZE.css
 		padding-bottom: .8em;
 		font-weight: 300;
 		letter-spacing: 1px;
+		font-family: "bebas-neue";
 	}
 
 	.text-med {
 		font-size: 1em;
 		font-weight: 400;
-		padding: 1.6em 4.2em;
-		font-family: "museo";
 		line-height: 1.1;
 		opacity: .9;
 		color: #2c3e50;
-	}
-
-	.graph-text {
-		font-size: 1.3em;
-		line-height: 1.6;
 		padding: 1.6em 0;
-		font-weight: 200;
-		font-family: "museo";
-		color: white;
 	}
 
 	.email-text {
@@ -289,19 +292,60 @@ NORMALIZE.css
 	.copyright {
 		color: #2c3e50;
 		text-align: center;
+		padding: 1.6em 0;
 	}
 
-	.about-header {
-		font-weight: 300;
+	.project-subhead {
 		text-transform: uppercase;
+		font-family: 'bebas-neue', sans-serif;
+		position: absolute;
+		left: 0;
+		font-size: 19px;
+		opacity: .5;
+	}
+	
+
+	/*===== ACCORDION =====*/
+
+	.accordion-content h1 {
+		font-weight: 400;
+		text-align: center;
+		font-size: 2em;
+		margin-right: 1px;
+		font-family: "bebas-neue";
 	}
 
-	.work-header {
-		font-weight: 200;
-		text-transform: uppercase;
-		font-size: 3.6em;
+	.accordion-content {
 		text-align: center;
 	}
+
+	.accordion-content p {
+		padding: 1.6em 0;
+	}
+
+
+	/*===== SLIDER =====*/
+
+	#work-slider-inner .item img{
+		width: auto;
+		margin: 0 auto;
+		display: block;
+		-webkit-transition:.4s ease-in-out;
+		-webkit-backface-visibility: hidden;
+	}
+
+	#work-slider-inner .item img:hover{
+		-webkit-transition:.4s ease-in-out;
+		-webkit-transform:scale(1.1);
+	}
+
+	#work-slider-inner .item {
+		margin-bottom: -60px;
+	}
+
+	#work-slider {
+	}
+
 
 
 	/*===== Misc. Styles =====*/
@@ -310,13 +354,13 @@ NORMALIZE.css
 		font-size: 14px;
 		position: relative;
 		display: block;
-		margin-top: -15px;
+		margin-top: -12px;
 		color: #BB803B;
 	}
 
 	.character-inner {
 		font-size: 1.3em;
-		font-family: 'omnes-pro', cursive;
+		font-family: "bebas-neue";
 		display: block;
 		color: #fff;
 		padding: 1.6em 0;
@@ -353,20 +397,18 @@ NORMALIZE.css
 	}
 
 	/*===== Images =====*/
-
+	
+	.chicago {
+		background: url('../img/glenwood.jpg') no-repeat 0 0;
+		background-attachment: fixed;
+		background-size: cover;
+		height: 300px;
+	}
 	
 
 
 /*===================================== MEDIA QUERIES ======================================*/
 
-
-/* Medium screen breakpoint (400px) */
-@media (min-width: 25rem) {
-	.text-med {
-		padding-left: 5.2em;
-		padding-right: 5.2em;
-	}
-}
 
 
 /* Medium screen breakpoint (640px) */
@@ -435,53 +477,59 @@ NORMALIZE.css
 
 	
 	/* ====== MAIN ====== */
-
+	
 	.main {
+		padding-left: 10%;
+		text-align: left;
+		position: relative;
+		-webkit-transition:.4s ease-in-out;
+	}
+
+	.hero h1 {
+		margin: 0 auto;
 		position: relative;
 	}
 
-	.hero {
-		margin: 0 auto;
-		padding: 10em;
+	header {
+		position: fixed;
+		width: 4%;
+		left: 0;
+		background: transparent;
+		transition: all 0.4s ease;
+		z-index: 1;
+		-webkit-backface-visibility: hidden;
+		font-size: 12px;
+		height: 100%;
+		font-family: 'bebas-neue', sans-serif;
 	}
 
-	.intro {
-	 
+	header a {
+		color: #335C7D;
+		display: none;	
 	}
 
-	.intro-inner {
-		
+	header.sticky a {
+		display: block;
+		color: black;
+		 
 	}
 
-	nav {
-		position: absolute;
-		top: 5%;
-		right: 5%;
+	header.sticky  {
+		font-size: 24px;
+		text-align: left;
+		padding: 20px; 
+		transition: all 0.4s ease;
+		z-index: 1;
+		-webkit-backface-visibility: hidden;
+		background:#fff;
+		border-right: 1px solid #b6b6b6;
 	}
 
-	.menu {
-		padding: 2em;
-	}
+	/* ===== ACCORDION ===*/
 
-	.menu h1 {
-		font-size: 1.2em;
-		font-family: 'museo';
-		font-weight: 500;
-		color: white;
-		margin: 1em 0;
-		padding: 1em;
-	}
-
-	.menu h1:first-child {
-		
-		border-top: 2px solid white;
-		border-left: 2px solid white;
-	}
-
-	.menu h1:last-child {
-	
-		border-right: 2px solid white;
-		border-bottom: 2px solid white;
+	.accordion {
+		position: relative;
+		z-index: 2;
 	}
 
 	.accordion section > .accordion-content {
@@ -492,16 +540,24 @@ NORMALIZE.css
 		-ms-transition:height .25s;
 		-o-transition:height .25s;
 		transition:height .25s;
+		margin-top: -80px;
 	}
  
 	.accordion section:hover > .accordion-content {
-		height: 6em;
+		height: 12em;
+		-webkit-transition:height .25s;
+		-moz-transition:height .25s;
+		-ms-transition:height .25s;
+		-o-transition:height .25s;
+		transition:height .25s;
 	}
- 	
- 	.accordion-content li {
- 		color: #fff;
- 		margin: .4em 0;
- 	}
+
+	.accordion-content h1 {
+		font-weight: 400;
+		text-align: left
+		font-size: 3em;
+		margin-right: 1px;
+	}
 
 	/* ===== Work ===== */
 
@@ -516,39 +572,6 @@ NORMALIZE.css
  		overflow-y:scroll;
  		background: rgba(240,241,243,1);
  		-webkit-transition:.4s ease-in-out;
-	}
-
-	/*.work:after {
-		content: ' ';
-		position: absolute;
-		left: 99%;
-		width: 0;
-		height: 0;
-		margin-left: 1px;
-		display: block;
-		bottom: 50%;
-		border-left: 16px solid transparent;
-		border-right: 16px solid transparent;
-		border-top: 16px solid #fff;
-		-webkit-transform:rotate(270deg);
-	}*/
-
-	.work-nut {
-		text-align: center;
-	}
-
-	.work-nut h1 {
-		text-transform: uppercase;
-		font-size: 3em;
-		padding: 1.6em 0;
-	}
-
-	.work-nut p {
-		color: #222;
-	}
-
-	.work-area {
-		background: #7f8c8d;
 	}
 
 	.work-area img {
@@ -589,7 +612,7 @@ NORMALIZE.css
 
 
 	/*===== ABOUT =====*/
-	
+
 	.about {
 		position: fixed;
 	  	top:-100%;
@@ -601,14 +624,28 @@ NORMALIZE.css
  		-webkit-transition:.4s ease-in-out;
 	}
 
+	.about-label {
+		background: red;
+		position: absolute;
+		top: 52%;
+		right: 5%;
+		font-family: 'bebas-neue';
+		letter-spacing: 2px;
+		font-size: .8em;
+	}
+
 	#about-open:checked ~ .container .about{
 		top:0;
 		z-index: 1;
 		-webkit-transition:.4s ease-in-out;
 	}
 
-	#about-open:checked ~ .container .intro-inner {
+	#about-open:checked ~ .container .main {
 		padding-top:400px;
+		-webkit-transition:.4s ease-in-out;
+	}
+
+	#about-close:checked {
 		-webkit-transition:.4s ease-in-out;
 	}
 
@@ -630,10 +667,7 @@ NORMALIZE.css
 	.text-med {
 		font-size: 1.2em;
 		font-weight: 300;
-		font-family: "museo";
 		line-height: 1.2;
-		padding: 1.6em 4.2em;
-		max-width: 500px;
 		margin: 0 auto;
 	}
 
@@ -642,7 +676,7 @@ NORMALIZE.css
 		line-height: 1.6;
 		padding: 1.6em 0;
 		font-weight: 300;
-		font-family: "museo";
+		
 		color: #fff;
 	}
 
@@ -654,7 +688,7 @@ NORMALIZE.css
 		font-weight: 200;
 		text-transform: uppercase;
 		font-size: 3.6em;
-		text-align: center;
+		text-align: left;
 		background: red;
 
 	}
@@ -671,12 +705,6 @@ NORMALIZE.css
 
 	.three-quarter img {
 		max-width: 75%;
-	}
-
-	.me {
-		margin-left:100px;
-		bottom: 0;
-		position: fixed;
 	}
 
 	figure {
@@ -705,18 +733,27 @@ NORMALIZE.css
 	}
 
 
-	#owl-demo .item img{
+	#work-slider-inner .item img{
 		width: auto;
 		margin: 0 auto;
 		display: block;
+		-webkit-transition:.4s ease-in-out;
+		-webkit-backface-visibility: hidden;
 	}
 
-	#owl-demo .item {
-		
+	#work-slider-inner .item img:hover{
+		-webkit-transition:.4s ease-in-out;
+		-webkit-transform:scale(1.1);
 	}
 
-	#demo {
-		padding: 3.2em 0;
+	#work-slider-inner .item:hover {
+	}
+
+	#work-slider {
+		margin-bottom: 9.2em;
+	}
+
+	#work-slider:hover {
 	}
 
 }
