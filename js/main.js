@@ -13,7 +13,7 @@ $('a').smoothScroll();
 $(document).ready(function() {
  
   $("#work-slider-inner").owlCarousel({
-      items : 2,
+      items : 3,
       lazyLoad : true,
       pagination : true
  
@@ -32,3 +32,4 @@ $('header').addClass("sticky");
     $('header').removeClass("sticky");
   }
 });
+
