@@ -98,10 +98,14 @@ NORMALIZE.css
 		position: relative;	
 	}
 
+	.page-content {
+
+	}
+
 	/* ===== HOME ===== */
 
 	.hero {
-		text-align: left;
+
 	}
 
 	/*.hero h1 {
@@ -217,22 +221,6 @@ NORMALIZE.css
 
 	/*===== FOOTER ===== */
 
-	.social-icons {
-		margin: 0 auto;
-		padding-bottom: 3.2em;
-		text-align: center;
-	}
-	
-	.social-icons li {
-		display: inline-block;
-		margin: 0 .8em;
-		opacity: .8;
-		max-width: 25px;
-	}
-
-	.social-icons li:hover {
-		opacity: 1;
-	}
 
 	footer {
 		background:transparent;
@@ -254,7 +242,6 @@ NORMALIZE.css
 		font-weight: 400;
 		line-height: 1.1;
 		opacity: .9;
-		color: #2c3e50;
 		padding: 1.6em 0;
 	}
 
@@ -266,7 +253,6 @@ NORMALIZE.css
 	}
 
 	.copyright {
-		color: #2c3e50;
 		text-align: center;
 		padding: 1.6em 0;
 	}
@@ -274,14 +260,12 @@ NORMALIZE.css
 	.project-subhead {
 		text-transform: uppercase;
 		font-family: 'bebas-neue', sans-serif;
-		position: absolute;
-		left: 0;
-		font-size: 19px;
+		font-size: 1em;
 		opacity: .5;
 	}
 	
 
-	/*===== ACCORDION =====*/
+	/*===== ACCORDION =====
 
 	.accordion-content h1 {
 		font-weight: 400;
@@ -293,6 +277,7 @@ NORMALIZE.css
 
 	.accordion-content {
 		text-align: center;
+		
 	}
 
 	.accordion-content p {
@@ -300,7 +285,7 @@ NORMALIZE.css
 	}
 
 
-	/*===== SLIDER =====*/
+	/*===== SLIDER ======
 
 	#work-slider-inner .item img{
 		width: auto;
@@ -323,7 +308,7 @@ NORMALIZE.css
 
 	}
 
-
+*/
 
 	/*===== Misc. Styles =====*/
 
@@ -374,7 +359,7 @@ NORMALIZE.css
 	}
 
 	.ignore {
-		color: #fff;
+		color: rgba(34,34,34,1);
 	}
 
 	.ignore-1 {
@@ -383,12 +368,6 @@ NORMALIZE.css
 
 	/*===== Images =====*/
 	
-	.chicago {
-		background: url('../img/glenwood.jpg') no-repeat 0 0;
-		background-attachment: fixed;
-		background-size: cover;
-		height: 300px;
-	}
 	
 
 
@@ -464,28 +443,35 @@ NORMALIZE.css
 	/* ====== MAIN ====== */
 	
 	.main {
-		
-		text-align: left;
-		position: relative;
+		min-height: 100vh;
+ 		position: relative;
 		-webkit-transition:.4s ease-in-out;
+		margin-left: 75px;
+		overflow:hidden;
+	}
+
+	.page-content {
+		
 	}
 
 	.hero {
 		min-height: 100vh;
-		background: #3498db;
+		/*background: #3498db;*/
+		background: rgba(250,250,250,1);
 		position: relative;
 	}
 
 	.hero h1 {
 		position: relative;
-		font-size: 6.8em;
+		font-size: 6.2em;
 		letter-spacing: 10px;
-		color: rgba(255,255,255,.6);
+		/*color: rgba(255,255,255,.6);*/
+		color:rgba(34,34,34,.6);
+		padding-left: 75px;
 	}
 
 	.hero-text-holder {
 		max-width: 500px;
-		margin-left: 10%;
 		padding-top:2em;
 	}
 
@@ -529,7 +515,7 @@ NORMALIZE.css
 		background:#fff;
 	}
 
-	/* ===== ACCORDION ===*/
+	/* ===== ACCORDION ===
 
 	.accordion {
 		position: relative;
@@ -538,51 +524,42 @@ NORMALIZE.css
 
 	.accordion section > .accordion-content {
 		height: 0;
-		overflow: hidden;
-		-webkit-transition:height .25s;
-		-moz-transition:height .25s;
-		-ms-transition:height .25s;
-		-o-transition:height .25s;
-		transition:height .25s;
-		margin-top: -80px;
+ 		overflow: hidden;
+		-webkit-transition:height .35s;
+		-moz-transition:height .35s;
+		-ms-transition:height .35s;
+		-o-transition:height .35s;
+		transition:height .35s;
+		 
 	}
  
 	.accordion section:hover > .accordion-content {
 		height: 12em;
-		-webkit-transition:height .25s;
-		-moz-transition:height .25s;
-		-ms-transition:height .25s;
-		-o-transition:height .25s;
-		transition:height .25s;
+		-webkit-transition:height .35s;
+		-moz-transition:height .35s;
+		-ms-transition:height .35s;
+		-o-transition:height .35s;
+		transition:height .35s;
 	}
 
 	.accordion-content h1 {
 		font-weight: 400;
-		text-align: left
+		text-align: left;
 		font-size: 3em;
 		margin-right: 1px;
-	}
+	}*/
 
 	/* ===== Work ===== */
 
-	.work-intro h1 {
-		font-family: 'bebas-neue', sans-serif;
-		font-size: 5em;
-		letter-spacing: 10px;
-		margin-left: 18.5%;
-		padding-top: .8em;
-		color: #3498db;
-	}
 
-	/*.work {
+	.work {
 		position: absolute;
 	  	left:-100%;
  		text-align: left;
 		margin: 0 auto;
 		height: 100%;
-		width: 50%;
+		width: 100%;
  		z-index: 1;
- 		overflow-y:scroll;
  		background: rgba(240,241,243,1);
  		-webkit-transition:.4s ease-in-out;
 	}
@@ -598,63 +575,37 @@ NORMALIZE.css
 		-webkit-transition:.4s ease-in-out;
 	}
 
-	#work-open:checked ~ .container .intro {
+	#work-open:checked ~ .container .main {
 		padding-left: 50%;
-		z-index: 1;
+	 
 		-webkit-transition:.4s ease-in-out;
 	}
 
-	#work-open:checked ~ .container .menu {
-		opacity: .1;
-		-webkit-transition:.4s ease-in-out;
-	}
 
-	#work-open:checked ~ .container #flipping-cross {
-		-webkit-transform:rotate(180deg);
-		-webkit-transition:.4s linear;
-	}
-
-	#close:checked ~ .container #flipping-cross {
-		-webkit-transform:rotate(-180deg);
-		-webkit-transition:.4s linear;
-	}
-
-	#close:checked ~ .container .intro {
-		-webkit-transition:.4s linear;
-	}*/
-
-
-	/*===== ABOUT =====
+	/*===== ABOUT =====*/
 
 	.about {
-		position: fixed;
-	  	top:-100%;
+		position: absolute;
+	  	right:-100%;
  		text-align: left;
 		margin: 0 auto;
-		height: 70%;
-		width: 100%;
-		background: orange;
+		height: 100%;
+		width: 50%;
+		z-index: 2;
+		background: brown;
  		-webkit-transition:.4s ease-in-out;
 	}
 
-	.about-label {
-		background: red;
-		position: absolute;
-		top: 52%;
-		right: 5%;
-		font-family: 'bebas-neue';
-		letter-spacing: 2px;
-		font-size: .8em;
-	}
-
 	#about-open:checked ~ .container .about{
+		right:0;
 		top:0;
 		z-index: 1;
 		-webkit-transition:.4s ease-in-out;
 	}
 
 	#about-open:checked ~ .container .main {
-		padding-top:400px;
+		padding-right: 50%;
+		 
 		-webkit-transition:.4s ease-in-out;
 	}
 
@@ -668,13 +619,45 @@ NORMALIZE.css
 		top: 5%;
 	}
 
+	.main-contain h1 {
+		font-family: 'bebas-neue', sans-serif;
+		font-size: 5em;
+		text-align: center;
+		padding-top: .8em;
+		color: #3498db;
+		-webkit-transition:.4s ease-in-out;
+	}
+
+
+
+	/*===== SOCIAL ICONS ======*/
+
+	.social-icons {
+		margin: 0 auto;
+		padding-top: 6em;
+	}
+	
+	.social-icons li {
+		display: block; 
+		font-size: 5px;
+		width: 80%;
+		vertical-align: middle;
+		-webkit-filter: grayscale(1);
+		opacity: .6;
+		-webkit-transition:.4s ease-in-out;
+	}
+
+	.social-icons li:hover {
+		-webkit-filter: grayscale(0);
+		-webkit-transition:.4s ease-in-out;
+	}
+
 	
 	/*===== Text Styles =====*/
 
 	.text-lrg {
 		font-size: 3.8em;
 		line-height: 1.1;
-		 
 	}
 
 	.text-med {
@@ -689,7 +672,6 @@ NORMALIZE.css
 		line-height: 1.6;
 		padding: 1.6em 0;
 		font-weight: 300;
-		
 		color: #fff;
 	}
 
@@ -754,7 +736,7 @@ NORMALIZE.css
 	}
 
 
-	#work-slider-inner .item img{
+	/*#work-slider-inner .item img{
 		width: auto;
 		margin: 0 auto;
 		display: block;
@@ -777,7 +759,7 @@ NORMALIZE.css
 
 	.accordion {
 
-	}
+	}*/
 
 }
 
@@ -786,15 +768,34 @@ NORMALIZE.css
 
 /* Larger screen breakpoint (1100px) */
 @media (min-width: 68.750em) {	
-	.text-lrg {
-		font-size: 4.8em;
-	}
+	
 }
 
 
 /* Larger screen breakpoint (960px) */
 @media (min-width: 70rem) {	
 
+}
+
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #222;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
 }
 
 

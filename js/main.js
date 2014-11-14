@@ -9,13 +9,14 @@ $('a').smoothScroll();
 
 
 
-/* Owl Slider */
+/* Owl Slider 
 $(document).ready(function() {
  
   $("#work-slider-inner").owlCarousel({
-      items : 3,
+      items : 4,
       lazyLoad : true,
-      pagination : true
+      pagination : true,
+      navigation : true
  
   });
  
