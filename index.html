@@ -31,10 +31,11 @@
 				</div>
 
 			
-			<div class="intro">
-				<p>Matt Gelfand is a UX designer and visual storyteller based in Boston.</p>
-				<a class="btn" href="#work">View Work</a>
-			</div>
+				<div class="intro">
+					<p>Matt Gelfand is a UX designer and visual storyteller based in Boston.</p>
+					<a class="btn" href="#work">View Work</a>
+				</div>
+				
 				<header>
 					<a class="home-btn" href="#top"><svg class="svg-icon" viewBox="0 0 20 20">
 					<path fill="none" d="M7.228,11.464H1.996c-0.723,0-1.308,0.587-1.308,1.309v5.232c0,0.722,0.585,1.308,1.308,1.308h5.232
@@ -52,14 +53,12 @@
 					</svg>
 					</a>
 					
-
 					<a href="#"><svg class="svg-icon" viewBox="0 0 20 20">
-					<path fill="none" d="M14.023,12.154c1.514-1.192,2.488-3.038,2.488-5.114c0-3.597-2.914-6.512-6.512-6.512
-					c-3.597,0-6.512,2.916-6.512,6.512c0,2.076,0.975,3.922,2.489,5.114c-2.714,1.385-4.625,4.117-4.836,7.318h1.186
-					c0.229-2.998,2.177-5.512,4.86-6.566c0.853,0.41,1.804,0.646,2.813,0.646c1.01,0,1.961-0.236,2.812-0.646
-					c2.684,1.055,4.633,3.568,4.859,6.566h1.188C18.648,16.271,16.736,13.539,14.023,12.154z M10,12.367
-					c-2.943,0-5.328-2.385-5.328-5.327c0-2.943,2.385-5.328,5.328-5.328c2.943,0,5.328,2.385,5.328,5.328
-					C15.328,9.982,12.943,12.367,10,12.367z"></path>
+					<path fill="none" d="M3.015,4.779h1.164V3.615H3.015V4.779z M18.73,1.869H1.269c-0.322,0-0.582,0.26-0.582,0.582v15.133
+					c0,0.322,0.26,0.582,0.582,0.582H18.73c0.321,0,0.582-0.26,0.582-0.582V2.451C19.312,2.129,19.052,1.869,18.73,1.869z
+					M18.148,16.42c0,0.322-0.261,0.582-0.582,0.582H2.433c-0.322,0-0.582-0.26-0.582-0.582V6.525h16.297V16.42z M18.148,5.361H1.851
+					V3.615c0-0.322,0.26-0.582,0.582-0.582h15.133c0.321,0,0.582,0.26,0.582,0.582V5.361z M7.671,4.779h1.165V3.615H7.671V4.779z
+					M5.344,4.779h1.164V3.615H5.344V4.779z"></path>
 					</svg>
 					</a>
 					
@@ -96,31 +95,65 @@
 
 			<section class="main">
 				<div class="row clearfix">
-					<div class="column half">
-						<article class="main-contain">
-							<h1 class='text-lrg'><label for="work-open">Recent<span class="ignore-1">Work</span></label></h1>
-						</article>
-					</div>
-				</div>
-			</section>
+					<div class="column full"> 
+						<span class="drag-note">Click and drag to cycle through ⇢</span>
+						<div class="work-slider" id="work">
+							<div id="work-container">
+								<div id="work-slider-inner" class="owl-carousel">
+									
+									<div class="overlay">
+										<div class="item">
+											<img class="lazyOwl" data-src="img/owl-img-2.png" alt="Owl Image">
+											<label for="work-open">
+												<div class="overlay-text">
+													<span class="overlay-text-inner">
+													<h1 class="overlay-text-hed">Barreling Ahead</h1>
+													<p class="overlay-text-desc">project // 2014</p>
+													</span>
+												</div>
+											</label>
+										</div>
+									</div>
 
-				<!--PROJECT OVERLAY-->
-				<section class="work" id="work">
-					<div class="row clearfix">
-						<div class="column full">
-							<p>really dont know how to show this shit.</p>
-							<label for="close" id="work-close">✕</label>
+									<div class="overlay">
+										<div class="item">
+											<img class="lazyOwl" data-src="img/backstory-img.png" alt="Owl Image">
+											<label for="work-open">
+												<div class="overlay-text">
+													<span class="overlay-text-inner">
+													<h1 class="overlay-text-hed">Barreling Ahead</h1>
+													<p class="overlay-text-desc">project // 2014</p>
+													</span>
+												</div>
+											</label>
+										</div>
+									</div>
+
+									<div class="overlay">
+										<div class="item">
+											<img class="lazyOwl" data-src="img/owl-img-2.png" alt="Owl Image">
+											<label for="work-open">
+												<div class="overlay-text">
+													<span class="overlay-text-inner">
+													<h1 class="overlay-text-hed">Barreling Ahead</h1>
+													<p class="overlay-text-desc">project // 2014</p>
+													</span>
+												</div>
+											</label>
+										</div>
+									</div>
+
+								
+								</div>
+							</div>
 						</div>
 					</div>
-				</section>
-				<!--PROJECT OVERLAY-->
-
+				</div>
 			</section>
 
 			<footer class="row clearfix contain">
 				<div class="column full">
 					<p class="email-text"><a href="mailto:matthew.gelfand@gmail.com?subject=Let's build something great">matthew.gelfand<span class="opacity">@</span>gmail.com</a></p>
-					<p class="copyright">© 2014 Matt Gelfand</p>
 				</div>
 			</footer>
 
@@ -133,6 +166,7 @@
 						<img srcset="img/devices-lrg.png" alt="">
 					</picture>
 						<span class="character-inner">With Device-Independent Functionality</span>
+						<p class="copyright">© 2014 Matt Gelfand</p>
 					</div>
 			</section>
 
