@@ -13,10 +13,14 @@
 <body>
 
 <!--openers-->
-<input type="radio" id="work-open" name="toggle" value="overlay">
-<input type="radio" id="about-open" name="toggle" value="overlay">
+<input type="radio" id="work-open-common" name="toggle" value="overlay">
+<input type="radio" id="work-open-looped" name="toggle" value="overlay">
+<input type="radio" id="work-open-sportscenter" name="toggle" value="overlay">
+<input type="radio" id="work-open-backstory" name="toggle" value="overlay">
+<input type="radio" id="work-open-nbn" name="toggle" value="overlay">
+<input type="radio" id="work-open-barreling" name="toggle" value="overlay">
 
-<!--<label for="work-open">work</label>-->
+<input type="radio" id="about-open" name="toggle" value="overlay">
 
 <!--closers-->
 <input type="radio" id="close" name="toggle" value="overlay">
@@ -28,12 +32,6 @@
 
 				<div class="about-link">
 					<p><label for="about-open">About</label></p>
-				</div>
-
-			
-				<div class="intro">
-					<p>Matt Gelfand is a UX designer and visual storyteller based in Boston.</p>
-					<a class="btn" href="#work">View Work</a>
 				</div>
 				
 				<header>
@@ -71,15 +69,6 @@
 					c0.151,0.003,0.304-0.052,0.419-0.166c0.015-0.017,0.021-0.035,0.034-0.052l7.731-6.704V15.896z"></path>
 					</svg>
 					</a>
-
-					<div class="social-icons">
-						<ul>
-							<li class="push"><a href="#"><img src="img/icon-github.png" alt=""></a></li>
-							<li class="push"><a href="#"><img src="img/icon-twitter.png" alt=""></a></li>
-							<li class="push"><a href="#"><img src="img/icon-dribbble.png" alt=""></a></li>
-							<li class="push"><a href="#"><img src="img/icon-linkedin.png" alt=""></a></li>
-						</ul>
-					</div>
 				</header>
 
 				<div class="hero-text-holder">
@@ -87,13 +76,17 @@
 						<div class="column full">
 							<h1 class="text-lrg opacity">Standing up for the <span class="ignore">user's</span> best interests.</h1>
 							<span class="triangle">◤</span>
+							<div class="intro">
+
+								<p>Matt Gelfand is a UX designer and visual storyteller based in Boston.</p>
+								<a class="btn" href="#work">View Work</a>
 							</div>
 						</div>
 					</div>	
 				</div>
-			</section>
+			</section><!--hero-->
 
-			<section class="main">
+			<section class="work-area">
 				<div class="row clearfix">
 					<div class="column full"> 
 						<span class="drag-note">Click and drag to cycle through ⇢</span>
@@ -103,15 +96,50 @@
 									
 									<div class="overlay">
 										<div class="item">
-											<img class="lazyOwl" data-src="img/owl-img-2.png" alt="Owl Image">
-											<label for="work-open">
+											<img class="lazyOwl" data-src="img/looped-in-mock.png" alt="Owl Image">
 												<div class="overlay-text">
 													<span class="overlay-text-inner">
-													<h1 class="overlay-text-hed">Barreling Ahead</h1>
+													<h1 class="overlay-text-hed">Common</h1>
 													<p class="overlay-text-desc">project // 2014</p>
+													<label for="work-open-common">
+														<p>open</p>
+													</label>
 													</span>
 												</div>
-											</label>
+											
+										</div>
+									</div>
+
+									<div class="overlay">
+										<div class="item">
+											<img class="lazyOwl" data-src="img/looped-in-mock.png" alt="Owl Image">
+												<div class="overlay-text">
+													<span class="overlay-text-inner">
+													<h1 class="overlay-text-hed">Looped-In</h1>
+													<p class="overlay-text-desc">client // 2014</p>
+													<label for="work-open-looped">
+														<p>open</p>
+													</label>
+													</span>
+												</div>
+			
+										</div>
+									</div>
+
+									<div class="overlay">
+										<div class="item">
+											<img class="lazyOwl" data-src="img/espn-img.png" alt="Owl Image">
+											 
+												<div class="overlay-text">
+													<span class="overlay-text-inner">
+													<h1 class="overlay-text-hed">ESPN Onboarding</h1>
+													<p class="overlay-text-desc">project // 2014</p>
+													<label for="work-open-sportscenter">
+														<p>open</p>
+													</label>
+													</span>
+												</div>
+											 
 										</div>
 									</div>
 
@@ -121,8 +149,11 @@
 											<label for="work-open">
 												<div class="overlay-text">
 													<span class="overlay-text-inner">
-													<h1 class="overlay-text-hed">Barreling Ahead</h1>
+													<h1 class="overlay-text-hed">Backstory</h1>
 													<p class="overlay-text-desc">project // 2014</p>
+													<label for="work-open-backstory">
+														<p>open</p>
+													</label>
 													</span>
 												</div>
 											</label>
@@ -131,12 +162,32 @@
 
 									<div class="overlay">
 										<div class="item">
-											<img class="lazyOwl" data-src="img/owl-img-2.png" alt="Owl Image">
+											<img class="lazyOwl" data-src="img/nbn-mock.png" alt="Owl Image">
+											<label for="work-open">
+												<div class="overlay-text">
+													<span class="overlay-text-inner">
+													<h1 class="overlay-text-hed">North by Northwestern</h1>
+													<p class="overlay-text-desc">client // 2014</p>
+													<label for="work-open-nbn">
+														<p>open</p>
+													</label>
+													</span>
+												</div>
+											</label>
+										</div>
+									</div>
+
+									<div class="overlay">
+										<div class="item">
+											<img class="lazyOwl" data-src="img/barreling-mock.png" alt="Owl Image">
 											<label for="work-open">
 												<div class="overlay-text">
 													<span class="overlay-text-inner">
 													<h1 class="overlay-text-hed">Barreling Ahead</h1>
-													<p class="overlay-text-desc">project // 2014</p>
+													<p class="overlay-text-desc">project // 2013</p>
+													<label for="work-open-barreling">
+														<p>open</p>
+													</label>
 													</span>
 												</div>
 											</label>
@@ -149,39 +200,115 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section><!--work area-->
 
-			<footer class="row clearfix contain">
-				<div class="column full">
-					<p class="email-text"><a href="mailto:matthew.gelfand@gmail.com?subject=Let's build something great">matthew.gelfand<span class="opacity">@</span>gmail.com</a></p>
-				</div>
+			<footer>
+				<p class="copyright">© 2014 Matt Gelfand All Rights Reserved</p>
 			</footer>
-
-			<section class="transition-screen">
-				<div class="transition-container contain">
-					<span class="character-inner">Crafting Beautiful Interfaces</span>
-					<picture>
-						<source srcset="img/devices-lrg.png" media="(min-width: 1000px)">
-						<source srcset="img/devices-lrg.png" media="(min-width: 800px)">
-						<img srcset="img/devices-lrg.png" alt="">
-					</picture>
-						<span class="character-inner">With Device-Independent Functionality</span>
-						<p class="copyright">© 2014 Matt Gelfand</p>
-					</div>
-			</section>
 
 			<!--ABOUT OVERLAY-->
 				<section class="about">
 					<div class="row clearfix">
 						<div class="column full">
 							<label for="close" id="about-close">✕</label>
-							<h1 class="about-header">The Skinny</h1>
-							<p class="graph-text"> I devise, design and occasionally develop smart and accessibile user experiences. 
-							I then shifted my focus to UX at an agency that's been a pioneer of the discipline for nearly a decade. Give me a project I'm passionate about, and I will relentlessly tinker until both the design and code are sound and aesthetically pleasing. I believe in building hastily and failing early, because the best ideas are never your first. Other mantras: Steal like an artist, don't make users think, and always have a plan - without one you have no destination, which means you can never arrive.</p>
+							<div class="about-inner">
+								<img src="img/img2.png" alt="">
+								<h1 class="about-hed"><span class="opacity">Some</span>background:</h1>
+								<p class="about-text"> I devise, design and occasionally develop smart and accessibile user experiences. I own a master's degree in interactive publishing from Northwestern's Medill School, and currently work as UX Designer at Fresh Tilled Soil, a firm that's been a pioneer of the user experience discipline for more than a decade. I believe in building hastily and failing early, because the best ideas are never your first. Other mantras: Steal like an artist, don't make users think, and always have a plan - without one you have no destination, which means you can never arrive.</p>
+								<p class="email-me">
+								<svg class="svg-icon-white" viewBox="0 0 20 20">
+								<path fill="none" d="M19.291,3.026c0.002-0.15-0.053-0.301-0.167-0.415c-0.122-0.122-0.286-0.172-0.444-0.161H1.196
+								c-0.16-0.011-0.322,0.039-0.444,0.161C0.637,2.725,0.583,2.875,0.585,3.026c0,0.003-0.002,0.006-0.002,0.009v14.032
+								c0,0.322,0.262,0.584,0.585,0.584h17.54c0.322,0,0.584-0.262,0.584-0.584V3.035C19.292,3.032,19.291,3.029,19.291,3.026z
+								M17.147,3.619l-7.21,6.251L2.728,3.619H17.147z M18.122,15.896c0,0.323-0.261,0.584-0.584,0.584H2.337
+								c-0.323,0-0.585-0.261-0.585-0.584V4.292l7.732,6.704c0.013,0.017,0.019,0.035,0.034,0.052c0.115,0.114,0.268,0.169,0.419,0.166
+								c0.151,0.003,0.304-0.052,0.419-0.166c0.015-0.017,0.021-0.035,0.034-0.052l7.731-6.704V15.896z"></path>
+								</svg>
+								<a href="mailto:matthew.gelfand@gmail.com?subject=Let's build something great">matthew.gelfand<span class="opacity">@</span>gmail.com</a>
+								</p>
+
+								<div class="social-icons">
+									<ul>
+										<li class="push"><a href="#"><img src="img/icon-github.png" alt=""></a></li>
+										<li class="push"><a href="#"><img src="img/icon-twitter.png" alt=""></a></li>
+										<li class="push"><a href="#"><img src="img/icon-dribbble.png" alt=""></a></li>
+										<li class="push"><a href="#"><img src="img/icon-linkedin.png" alt=""></a></li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
 			<!--END ABOUT OVERLAY-->
+
+			<!--WORK OVERLAY-->
+			<section class="work common">
+				<div class="row clearfix">
+					<div class="column full">
+						<label for="close" id="work-close">✕</label>
+						<h1>Common</h1>
+						<h2>Overview</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit sed porro dolorem perspiciatis excepturi quis, eos dolores facere saepe. Libero omnis ex iusto, non nesciunt totam esse, dolorem magnam maiores!</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="work looped">
+				<div class="row clearfix">
+					<div class="column full">
+						<label for="close" id="work-close">✕</label>
+						<h1>looped-in</h1>
+						<h2>Overview</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit sed porro dolorem perspiciatis excepturi quis, eos dolores facere saepe. Libero omnis ex iusto, non nesciunt totam esse, dolorem magnam maiores!</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="work sportscenter">
+				<div class="row clearfix">
+					<div class="column full">
+						<label for="close" id="work-close">✕</label>
+						<h1>sportscenter</h1>
+						<h2>Overview</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit sed porro dolorem perspiciatis excepturi quis, eos dolores facere saepe. Libero omnis ex iusto, non nesciunt totam esse, dolorem magnam maiores!</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="work backstory">
+				<div class="row clearfix">
+					<div class="column full">
+						<label for="close" id="work-close">✕</label>
+						<h1>backstory</h1>
+						<h2>Overview</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit sed porro dolorem perspiciatis excepturi quis, eos dolores facere saepe. Libero omnis ex iusto, non nesciunt totam esse, dolorem magnam maiores!</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="work nbn">
+				<div class="row clearfix">
+					<div class="column full">
+						<label for="close" id="work-close">✕</label>
+						<h1>nbn</h1>
+						<h2>Overview</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit sed porro dolorem perspiciatis excepturi quis, eos dolores facere saepe. Libero omnis ex iusto, non nesciunt totam esse, dolorem magnam maiores!</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="work barreling">
+				<div class="row clearfix">
+					<div class="column full">
+						<label for="close" id="work-close">✕</label>
+						<h1>barreling</h1>
+						<h2>Overview</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit sed porro dolorem perspiciatis excepturi quis, eos dolores facere saepe. Libero omnis ex iusto, non nesciunt totam esse, dolorem magnam maiores!</p>
+					</div>
+				</div>
+			</section>
+
+			<!--END WORK OVERLAY-->
 
 		</div><!--page-content-->		
 	</div><!--container-->
@@ -202,77 +329,4 @@
 		<a class="to-top float" href="#top"><img src="img/back-to-top.png" alt="up arrow that brings user back to top of page" /></a>
 	</div>-->
 
-	<!--<div class="work-slider" id="work">
-						<div id="work-container">
-							<div id="work-slider-inner" class="owl-carousel">
-							
-								<div class="accordion">
-									<section>
-										<div class="item"><label for="work-open"><img class="lazyOwl" data-src="img/img-nbn.png" alt="Owl Image"></label></div>
-										<div class="accordion-content contain">
-											<span class="project-subhead">PROJECT</span>
-											<h1>Barreling Ahead</h1>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quisquam, obcaecati ea quaerat pariatur nihil labore at quam deleniti reiciendis, laboriosam assumenda ipsum voluptates nostrum necessitatibus natus! Eligendi, natus, hic?</p>
-										</div>
-									</section>
-								</div>
-
-								<div class="accordion">
-									<section>
-										<div class="item"><label for="work-open"><img class="lazyOwl" data-src="img/img-espn.png" alt="Owl Image"></label></div>
-										<div class="accordion-content contain">
-											<span class="project-subhead">PROJECT</span>
-											<h1>Barreling Ahead</h1>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quisquam, obcaecati ea quaerat pariatur nihil labore at quam deleniti reiciendis, laboriosam assumenda ipsum voluptates nostrum necessitatibus natus! Eligendi, natus, hic?</p>
-										</div>
-									</section>
-								</div>
-
-								<div class="accordion">
-									<section>
-										<div class="item"><label for="work-open"><img class="lazyOwl" data-src="img/img-backstory.png" alt="Owl Image"></label></div>
-										<div class="accordion-content contain">
-											<span class="project-subhead">PROJECT</span>
-											<h1>Barreling Ahead</h1>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quisquam, obcaecati ea quaerat pariatur nihil labore at quam deleniti reiciendis, laboriosam assumenda ipsum voluptates nostrum necessitatibus natus! Eligendi, natus, hic?</p>
-										</div>
-									</section>
-								</div>
-
-								<div class="accordion">
-									<section>
-										<div class="item"><label for="work-open"><img class="lazyOwl" data-src="img/owl-img-2.png" alt="Owl Image"></label></div>
-										<div class="accordion-content contain">
-											<span class="project-subhead">PROJECT</span>
-											<h1>Barreling Ahead</h1>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quisquam, obcaecati ea quaerat pariatur nihil labore at quam deleniti reiciendis, laboriosam assumenda ipsum voluptates nostrum necessitatibus natus! Eligendi, natus, hic?</p>
-										</div>
-									</section>
-								</div>
-
-								<div class="accordion">
-									<section>
-										<div class="item"><label for="work-open"><img class="lazyOwl" data-src="img/owl-img-2.png" alt="Owl Image"></label></div>
-										<div class="accordion-content contain">
-											<h1>Barreling Ahead</h1>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quisquam, obcaecati ea quaerat pariatur nihil labore at quam deleniti reiciendis, laboriosam assumenda ipsum voluptates nostrum necessitatibus natus! Eligendi, natus, hic?</p>
-										</div>
-									</section>
-								</div>
-
-								<div class="accordion">
-									<section>
-										<div class="item"><label for="work-open"><img class="lazyOwl" data-src="img/owl-img-2.png" alt="Owl Image"></label></div>
-										<div class="accordion-content contain">
-											<h1>Barreling Ahead</h1>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quisquam, obcaecati ea quaerat pariatur nihil labore at quam deleniti reiciendis, laboriosam assumenda ipsum voluptates nostrum necessitatibus natus! Eligendi, natus, hic?</p>
-										</div>
-									</section>
-								</div>
-
-
-							</div>
-						</div>
-       				</div>
-				
-			</section>-->
+	

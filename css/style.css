@@ -83,7 +83,7 @@ NORMALIZE.css
 /*===================================== MAIN MOBILE STYLES ======================================*/
 
 	html { 
-		 font-family: "adobe-caslon-pro", serif;
+		 font-family: "dejarip", serif;
 		 min-height: 100%;
 	}
 
@@ -107,19 +107,6 @@ NORMALIZE.css
 	.hero {
 
 	}
-
-	/*.hero h1 {
-		font-size: 3em;
-		max-width: 600px;
-		
-		padding-left: 6%;
-		color: rgba(255,255,255,.6);
-	}
-
-	.hero-text-holder {
-		padding: 2em;
-		position: relative;
-	}*/
 
 	header {
 		position: fixed;
@@ -181,7 +168,6 @@ NORMALIZE.css
 		padding-top: 1.6em;
 
 		/*-webkit-animation: down 3s ease-in infinite;*/
-	}
 
 	/*@-webkit-keyframes down {
 		0% {
@@ -222,16 +208,12 @@ NORMALIZE.css
 	/*===== FOOTER ===== */
 
 
-	footer {
-		background:transparent;
-	}
-	
 	/*===== Text Styles =====*/
 
 	.text-lrg {
 		font-size: 2.2em;
 		line-height: 1.1;
-		padding-bottom: .8em;
+		
 		font-weight: 300;
 		letter-spacing: 1px;
 		font-family: "bebas-neue";
@@ -254,6 +236,8 @@ NORMALIZE.css
 
 	.copyright {
 		text-align: center;
+		color: #222;
+		font-size: .7em;
 		padding: 1.6em 0;
 	}
 
@@ -273,26 +257,6 @@ NORMALIZE.css
 		text-align: center;
 	}
 	
-
-	/*===== ACCORDION =====
-
-	.accordion-content h1 {
-		font-weight: 400;
-		text-align: center;
-		font-size: 2em;
-		margin-right: 1px;
-		font-family: "bebas-neue";
-	}
-
-	.accordion-content {
-		text-align: center;
-		
-	}
-
-	.accordion-content p {
-		padding: 1.6em 0;
-	}
-
 
 	/*===== SLIDER ======
 
@@ -340,7 +304,14 @@ NORMALIZE.css
 		cursor: pointer;
 	}
 
-	#about-open, #work-open, #close, #close-again {
+	#about-open, 
+	#work-open-common, 
+	#work-open-looped, 
+	#work-open-sportscenter, 
+	#work-open-backstory,
+	#work-open-nbn,
+	#work-open-barreling, 
+	#close {
 		display: none;
 	}
 
@@ -449,14 +420,6 @@ NORMALIZE.css
 
 	
 	/* ====== MAIN ====== */
-	
-	.main {
-		min-height: 100vh;
- 		position: relative;
-		-webkit-transition:.4s ease-in-out;
-		margin-left: 75px;
-		overflow:hidden;
-	}
 
 	.page-content {
 		
@@ -464,28 +427,26 @@ NORMALIZE.css
 
 	.hero {
 		min-height: 100vh;
-		/*background: #3498db;*/
 		background: rgba(250,250,250,1);
 		position: relative;
 	}
 
 	.hero h1 {
 		position: relative;
-		font-size: 5.2em;
+		font-size: 12.5em;
 		letter-spacing: 10px;
 		/*color: rgba(255,255,255,.6);*/
 		color:rgba(34,34,34,.6);
-		padding-left: 75px;
 	}
 
 	.hero-text-holder {
-		max-width: 500px;
-		padding-top:2em;
+		padding-top:6em;
+		padding-left: 155px;
 	}
 
 	header {
 		position: fixed;
-		width: 6%;
+		width: 4.5%;
 		left: 0;
 		background: transparent;
 		transition: all 0.4s ease;
@@ -524,15 +485,14 @@ NORMALIZE.css
 	}
 
 	.intro {
-		max-width: 350px;
-		position: absolute;
-		left: 12%;
-		bottom: 7%;
+		position: relative;
+		bottom: 4.5em;
+		left: 4em;
 	}
 
 	.intro p {
 		margin-bottom: 1.8em;
-		font-size: 1.5em;
+		font-size: 3.5em;
 		font-weight: 300;
 		font-family: 'bebas-neue', sans-serif;
 	}
@@ -563,71 +523,85 @@ NORMALIZE.css
 
 	/* ===== ACCORDION === */
 
-	.accordion {
-		position: relative;
-		z-index: 2;
+
+
+	/* ===== WORK ===== */
+
+	
+	.work-area {
+ 		position: relative;
+		-webkit-transition:.4s ease-in-out;
+		overflow:hidden;
 	}
 
-	.accordion section > .accordion-content {
-		height: 0;
- 		overflow: hidden;
-		-webkit-transition:height .35s;
-		-moz-transition:height .35s;
-		-ms-transition:height .35s;
-		-o-transition:height .35s;
-		transition:height .35s;
-		 
-	}
- 
-	.accordion section:hover > .accordion-content {
-		height: 12em;
-		-webkit-transition:height .35s;
-		-moz-transition:height .35s;
-		-ms-transition:height .35s;
-		-o-transition:height .35s;
-		transition:height .35s;
+	.work .row {
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 3.2em 0;
 	}
 
-	.accordion-content h1 {
-		font-weight: 400;
-		text-align: left;
-		font-size: 3em;
-		margin-right: 1px;
+	.work h1 {
+		text-align: center;
 	}
-
-	/* ===== Work ===== 
-
 
 	.work {
-		position: absolute;
+		position: fixed;
 	  	left:-100%;
  		text-align: left;
 		margin: 0 auto;
 		height: 100%;
 		width: 100%;
  		z-index: 1;
- 		background: rgba(240,241,243,1);
- 		-webkit-transition:.4s ease-in-out;
+ 		-webkit-transition:1.4s ease-in-out;
+	} 
+
+	.common {
+		background: red;
 	}
 
-	.work-area img {
-		float: left;
+	.looped {
+		background: green;
 	}
 
-	#work-open:checked ~ .container .work {
+	.sportscenter {
+		background: orange;
+	}
+
+	.backstory {
+		background: blue;
+	}
+
+	.nbn {
+		background: purple;
+	}
+
+	.barreling {
+		background: brown;
+	}
+
+	#work-open-common:checked ~ .container .common, 
+	#work-open-looped:checked ~ .container .looped, 
+	#work-open-sportscenter:checked ~ .container .sportscenter, 
+	#work-open-backstory:checked ~ .container .backstory, 
+	#work-open-nbn:checked ~ .container .nbn,
+	#work-open-nbn:checked ~ .container .barreling {
 		left: 0;
 		top: 0;
 		z-index: 1;
-		-webkit-transition:.4s ease-in-out;
+		-webkit-transition:1.4s ease-in-out;
 	}
 
-	#work-open:checked ~ .container .main {
+	#work-open:checked ~ .container .work-area {
 		padding-left: 50%;
-	 
-		-webkit-transition:.4s ease-in-out;
+		-webkit-transition:1.4s ease-in-out;
 	}
-	*/
 
+	#close:checked {
+		-webkit-transition:1.4s ease-in-out;
+	}
+
+
+	/*===== WORK SLIDER =====*/ 
 
 	#work-slider-inner .item img{
 		width: auto;
@@ -639,16 +613,6 @@ NORMALIZE.css
 
 	#work-slider-inner .item img:hover{
 		-webkit-transition:.4s ease-in-out;
-		
-	}
-
-	#work-slider-inner .item:hover {
-
-	}
-
-	.work-slider {
-		 
-	
 		
 	}
 
@@ -671,8 +635,10 @@ NORMALIZE.css
 
 	.overlay-text {
 		position: absolute;
-		top: 0;
-		left:0;
+		top: 50%;
+		left: 50%;
+		margin-top: -250px;
+		margin-left: -250px;
 		right: 0;
 		bottom: 0;
 		color: #222;
@@ -681,8 +647,7 @@ NORMALIZE.css
 		width: 100%;
 		height: 100%;
 		visibility: hidden;
-		background: #fff;
-		text-align: center;
+		
 		-webkit-transition: opacity 0.5s;
 		-webkit-transition: all ease 0.5s;
 	}
@@ -691,8 +656,7 @@ NORMALIZE.css
 		position: absolute;
 		font-family: 'bebas-neue', sans-serif;
 		top: 40%;	
-		left: 30%;
-	
+		left: 40%;
 		text-align: center;
 	}
 
@@ -705,44 +669,24 @@ NORMALIZE.css
 		position: relative;
 	}
 
-	/*.overlay-text-hed:before {
-		content: '';
-		position: absolute;
-		height: 5px;
-		background-color: #222;
-		top: 50%;
-		left: -15%;
-		width: 10%;	
-	}
-
-	.overlay-text-hed:after {
-		content: '';
-		position: absolute;
-		height: 5px;
-		background-color: #222;
-		top: 50%;
-		left: 103.5%;
-		width: 10%;
-	}*/
-
 	.overlay-text-desc {
 		font-size: .5em;
-		font-family: 'adobe-caslon-pro', serif;
-		}
+		font-family: "dejarip", serif;
+	}
 
 
 
 	/*===== ABOUT =====*/
 
 	.about {
-		position: absolute;
+		position: fixed;
 	  	top:-100%;
  		text-align: left;
 		margin: 0 auto;
-		height: 20%;
+		height: 60%;
 		width: 100%;
 		z-index: 2;
-		background: brown;
+		background: #646464;
  		-webkit-transition:.4s ease-in-out;
 	}
 
@@ -757,6 +701,33 @@ NORMALIZE.css
 		font-weight: 300;
 	}
 
+	.about-inner {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.about-inner img {
+		float: right;	
+	}
+
+	.about-inner p {
+		float: left;
+		font-size: 1em;
+		font-family: "dejarip";
+		padding-top: 1.6em;
+	}
+
+	.about-inner a {
+		color: #fff;
+	}
+
+	.about-hed {
+		font-family: 'bebas-neue', sans-serif;
+		font-size: 4em;
+		color: #fff;
+		padding-top: .8em;
+	}
+
 	#about-open:checked ~ .container .about{
 		top:0;
 		z-index: 1;
@@ -764,7 +735,6 @@ NORMALIZE.css
 	}
 
 	#about-open:checked ~ .container .main {
-		 
 		-webkit-transition:.4s ease-in-out;
 	}
 
@@ -772,25 +742,10 @@ NORMALIZE.css
 		-webkit-transition:.4s ease-in-out;
 	}
 
-	#about-close {
+	#about-close, #work-close {
 		position: absolute;
 		right: 5%;
 		top: 5%;
-	}
-
-	.main-contain h1 {
-		font-family: 'bebas-neue', sans-serif;
-		font-size: 5em;
-		padding-top: .8em;
-		color: #3498db;
-		-webkit-transition:.4s ease-in-out;
-	}
-	
-	.triangle {
-		position: absolute;
-		left: 7.5%;
-		bottom: 15%;
-		font-size: 40px;
 	}
 
 
@@ -798,13 +753,13 @@ NORMALIZE.css
 
 	.social-icons {
 		margin: 0 auto;
-		padding-top: 9em;
+		max-width: 300px;
 	}
 	
 	.social-icons li {
-		display: block; 
-		font-size: 5px;
-		width: 80%;
+		display: inline-block; 
+		font-size: 1px;
+		width: 10%;
 		vertical-align: middle;
 		-webkit-filter: grayscale(1);
 		opacity: .6;
@@ -831,12 +786,14 @@ NORMALIZE.css
 		margin: 0 auto;
 	}
 
-	.graph-text {
+	.about-text {
 		font-size: 1em;
 		line-height: 1.6;
-		padding: 1.6em 0;
+		padding: .4em 0;
 		font-weight: 300;
 		color: #fff;
+		max-width: 460px;
+		height: auto;
 	}
 
 	.email-text {
@@ -856,10 +813,11 @@ NORMALIZE.css
 	.drag-note {
 		font-size: 20px;
 		position: absolute;
-		left: 5%;
-		bottom: 20%;
+		left: 6.7%;
+		top: 3%;
 		font-family: 'bebas-neue', sans-serif;
 		color: #787878;
+		z-index: 1;
 	}
 
 	/*===== Image Styles =====*/
@@ -908,6 +866,16 @@ NORMALIZE.css
 	.hidden {
 		display: block;
 	}
+
+	.triangle {
+		font-size: 60px;
+		position: relative;
+		left: -1px;
+	}
+
+	.opacity {
+		opacity: .5;
+	}
 }
 
 
@@ -929,21 +897,36 @@ NORMALIZE.css
 SVG Icons - svgicons.sparkk.fr
 ----- */
 
-.svg-icon {
-  width: 1.5em;
-  height: 1.5em;
-}
+	.svg-icon {
+		width: 1.5em;
+		height: 1.5em;
+		margin-left: 5%;
+	}
 
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-  fill: #222;
-}
+	.svg-icon-white {
+		width: 1.2em;
+		height: 1.2em;
+		margin-right: 5px;
+		position: relative;
+		top:.2em;
+	}
 
-.svg-icon circle {
-  stroke: #4691f6;
-  stroke-width: 1;
-}
+		.svg-icon-white path,
+		.svg-icon-white polygon,
+		.svg-icon-white rect {
+		fill: #fff;
+	}
+
+		.svg-icon path,
+		.svg-icon polygon,
+		.svg-icon rect {
+		fill:#222;
+	}
+
+		.svg-icon circle {
+		stroke: #4691f6;
+		stroke-width: 1;
+	}
 
 
 /*==============================================

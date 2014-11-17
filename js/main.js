@@ -14,7 +14,10 @@ $(document).ready(function() {
  
   $("#work-slider-inner").owlCarousel({
       items : 2,
-      lazyLoad : true
+      lazyLoad : true,
+      rewindNav: true,
+      pagination: true,
+      navigation: true
  
   });
  
