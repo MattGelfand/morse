@@ -83,7 +83,8 @@ NORMALIZE.css
 /*===================================== MAIN MOBILE STYLES ======================================*/
 
 	html { 
-		 font-family: "dejarip", serif;
+		 /*font-family: "brandon-grotesque";*/
+		 font-family: "minion-pro-caption";
 		 min-height: 100%;
 	}
 
@@ -107,16 +108,6 @@ NORMALIZE.css
 
 	.hero {
 
-	}
-
-	
-
-	.transition-screen {
- 		background: url('../img/glenwood.jpg') no-repeat 0 0;
-		text-align: center;
- 		background-size:cover;
-		height: 300px;
-		-webkit-backface-visibility: hidden;
 	}
 
 	/*.main-screen:before {
@@ -185,7 +176,7 @@ NORMALIZE.css
 		
 		font-weight: 300;
 		letter-spacing: 1px;
-		font-family: "bebas-neue";
+		font-family: "brandon-grotesque";
 	}
 
 	.text-med {
@@ -212,7 +203,7 @@ NORMALIZE.css
 
 	.project-subhead {
 		text-transform: uppercase;
-		font-family: 'bebas-neue', sans-serif;
+		font-family: "brandon-grotesque", sans-serif;
 		font-size: 1em;
 		opacity: .5;
 	}
@@ -221,7 +212,7 @@ NORMALIZE.css
 		z-index: 2;
 		color: #222;
 		font-weight: 300;
-		font-family: 'bebas-neue', sans-serif;
+		font-family: "brandon-grotesque", sans-serif;
 		font-size: 2.5em;
 		text-align: center;
 	}
@@ -387,7 +378,7 @@ NORMALIZE.css
 		-webkit-backface-visibility: hidden;
 		font-size: 12px;
 		width: 100%;
-		font-family: 'bebas-neue', sans-serif;
+		font-family: "brandon-grotesque", sans-serif;
 	}
 
 	header a {
@@ -446,7 +437,6 @@ NORMALIZE.css
 	.intro p {
 		margin-bottom: 1.8em;
 		font-size: 1.2em;
-		font-weight: 300;
 		text-align: center;
 		color:#fff;
 	}
@@ -458,7 +448,7 @@ NORMALIZE.css
 		padding: 1em 2em;
 		letter-spacing:.1em;
 		border-radius: 3px;
-		font-family: 'bebas-neue', sans-serif;
+		font-family: "brandon-grotesque", sans-serif;
 		-webkit-transition:.1s ease all;
 		-moz-transition:.1s ease all;
 		-ms-transition:.1s ease all;
@@ -487,46 +477,90 @@ NORMALIZE.css
 		-webkit-transition:.4s ease-in-out;
 	}
 
+	.overview {
+		background: #16A085;
+		color: #fff;
+		text-align: center;
+		padding: 3.2em 0;
+	}
+
+	.overview:before {
+		content: ' ';
+		position: absolute;
+		top:133%;
+		left:48%; 
+		width: 10px;
+		height: 10px;
+		display: block;
+		border-left: 16px solid transparent;
+		border-right: 16px solid transparent;
+		border-top: 16px solid #16A085;
+	}
+
+	.overview h1 {
+		text-transform: uppercase;
+		border: 5px solid white;
+		max-width: 300px;
+		padding: .2em 0;
+		font-size: 2.8em;
+		text-align: center;
+		font-family: 'brandon-grotesque', sans-serif;
+		margin: 0 auto;
+	}
+
+	#inner {
+		padding-top: 1.6em;
+	}
+
 	.work-contain {
 		max-width: 1000px;
 		margin: 0 auto;
 		padding: 3.2em 0;
 	}
 
-	.work h1 {
-		font-family: 'bebas-neue', sans-serif;
-	}
-
-	.work h1 {
-		font-size: 4em;
+	.hero-inner h1 {
+		font-family: "brandon-grotesque", sans-serif;
+		font-size: 3em;
 	}
 
 	.work h2 {
 		font-size: .9em;
 		opacity: .7;
+		font-family: "brandon-grotesque", sans-serif;
+		text-transform: uppercase;
+		padding-bottom: 1.6em;
+		color: #16A085;
+	}
+
+	.work p {
+		font-size: 1.2em;
+		line-height: 1.3;
 		padding-bottom: 1.6em;
 	}
 
 	.work-inner {
-		padding-top: 3.2em;
+		padding-top: 1.6em 0;
+		max-width: 800px;
+		text-align: center;
+		margin: 0 auto;
 	}
 
 	.work-inner h1 {
-		text-align: left;
-		font-size: 3em;
-		font-weight: 300;
+		font-size: 2.1em;
+		font-weight: 900;
 		padding-top: 1.6em;
+		text-transform: uppercase;
+		font-family: 'brandon-grotesque', sans-serif;
 	}
 
 	.work {
 		position: fixed;
 	  	left:-100%;
- 		text-align: left;
 		margin: 0 auto;
 		height: 100%;
 		width: 90%;
  		z-index: 1;
- 		background: #e8e8e8;
+ 		background: #fff;
  		overflow-y:scroll;
  		-webkit-transition:1.4s ease-in-out;
 	} 
@@ -538,7 +572,7 @@ NORMALIZE.css
 	}
 
 	.common-hero {
-		background: url('../img/post-its.jpg') 0 80% no-repeat;
+		background: url('../img/post-its.jpg') 83% 16% no-repeat;
 	}
 
 	.looped-hero {
@@ -546,15 +580,15 @@ NORMALIZE.css
 	}
 
 	.sportscenter-hero {
-		background: url('../img/sportscenter-hero.jpg') 95% 20% no-repeat;
+		background: url('../img/sportscenter-hero.jpg') 33% 50% repeat;
 	}
 
 	.backstory-hero {
-		background: url('../img/backstory-hero.jpg') 0 0 repeat;
+		background: url('../img/backstory-hero.png') 0 0 repeat;
 	}
 
 	.nbn-hero {
-		background: url('../img/nbn-hero.jpg') 70% 0 no-repeat;
+		background: url('../img/nbn-hero-alt.jpg') 0 0 repeat;
 	}
 
 	.barreling-hero {
@@ -625,7 +659,7 @@ NORMALIZE.css
 		-webkit-transition: opacity 0.5s;
 		height: 500px;
 		width: 500px;
-		font-family: 'bebas-neue', sans-serif;
+		font-family: "brandon-grotesque", sans-serif;
 	}
 
 	.overlay:hover .overlay-text {
@@ -658,13 +692,12 @@ NORMALIZE.css
 		font-size: .9em;
 		padding-bottom: .4em;
 		letter-spacing: 1px;
-		font-weight: 300;
+		font-weight: 500;
 		position: relative;
 	}
 
 	.overlay-text-desc {
 		font-size: .3em;
-		font-family: "dejarip", serif;
 		padding: .4em 0;
 		color: #16A085;
 		font-weight: 700;
@@ -679,7 +712,7 @@ NORMALIZE.css
 	  	top:-100%;
  		text-align: left;
 		margin: 0 auto;
-		height: 60%;
+		height: 65%;
 		width: 100%;
 		z-index: 3;
 		background: #16A085;
@@ -692,9 +725,8 @@ NORMALIZE.css
 		top: 2%;
 		opacity: .7;
 		letter-spacing: 3px;
-		 
-		 
-		font-weight: 300;
+		text-transform: uppercase;
+		font-weight: 900;
 		color: #fff;
 		z-index: 1;
 	}
@@ -704,11 +736,10 @@ NORMALIZE.css
 		left: 2%;
 		top: 2%;
 		opacity: .7;
-		font-family: 'bebas-neue', sans-serif;
+		font-family: "brandon-grotesque", sans-serif;
 		letter-spacing: 3px;
-
-		 
-		font-weight: 300;
+		text-transform: uppercase;
+		font-weight: 900;
 		color: #fff;
 		z-index: 1;
 	}
@@ -724,8 +755,7 @@ NORMALIZE.css
 
 	.about-inner p {
 		float: left;
-		font-size: .9em;
-		font-family: "dejarip";
+		font-size: 1em;
 		padding-top: 1.2em;
 		color: #fff;
 	}
@@ -735,11 +765,13 @@ NORMALIZE.css
 	}
 
 	.about-hed {
-		font-family: 'bebas-neue', sans-serif;
-		font-size: 4em;
+		font-family: "brandon-grotesque", sans-serif;
+		font-size: 2.6em;
 		color: #16A085;
 		padding-top: .8em;
 		color: #fff;
+		text-transform: uppercase;
+		font-weight: 700;
 	}
 
 	#about-open:checked ~ .container .about{
@@ -756,18 +788,45 @@ NORMALIZE.css
 		-webkit-transition:.4s ease-in-out;
 	}
 
-	#about-close, #work-close {
+	#about-close {
 		position: absolute;
 		right: 3%;
+		display: none;
 		top: 3%;
 		font-size: 40px;
 		color: #fff;
 	}
 
-	/*===== FOOTER =====*/
+	#work-close {
+		position: absolute;
+		top:10%;
+		font-size: 60px;
+		color: black;
+	}
 
+	/*===== FOOTER =====*/
+	
 	footer {
 		background: #16a085;
+	}
+
+	.process-top {
+		background: #fff;
+	}
+
+	.process-top div {
+		text-align: center;
+		max-width: 200px;
+		margin: 0 auto;
+		padding: .8em 0;
+	}
+
+	.process-top p {
+		color: #16a085;
+		font-size: .8em;
+		font-family: 'brandon-grotesque', sans-serif;
+		text-transform: uppercase;
+		font-weight: 900;
 	}
 
 
@@ -790,6 +849,13 @@ NORMALIZE.css
 		margin: 0 6em;
 		text-indent: -1px;
 		vertical-align: middle;
+	}
+
+	.contact a {
+		font-family: 'brandon-grotesque', sans-serif;
+		text-transform: uppercase;
+		font-weight: 900;
+		letter-spacing: 2px;
 	}
 
 
@@ -819,7 +885,7 @@ NORMALIZE.css
 
 	.email-text {
 		font-size: 3em;
-		font-family: 'bebas-neue', sans-serif;
+		font-family: "brandon-grotesque", sans-serif;
 		font-weight: 300;
 	}
 
@@ -834,7 +900,7 @@ NORMALIZE.css
 	.drag-note {
 		font-size: 20px;
 		text-align: center;
-		font-family: 'bebas-neue', sans-serif;
+		font-family: "brandon-grotesque", sans-serif;
 		color: #16a085;
 		padding: 3.2em 0 1.6em 0;
 		z-index: 1;
@@ -842,17 +908,24 @@ NORMALIZE.css
 
 	/*===== Image Styles =====*/
 
-	.quarter img {
-		max-width: 25%;
+	
+	.process-group {
+		max-width: 600px;
+		margin: 0 auto;
 	}
 
-	.half img {
-		max-width: 50%;
+	.process-group > div {
+		position: relative;
+		padding: 3.2em 0;
 	}
 
-	.three-quarter img {
-		max-width: 75%;
+	figcaption {
+		text-align: center;
+		color: #9e9e9e;
+		font-family: "brandon-grotesque", sans-serif;
 	}
+
+
 
 	figure {
 		margin:0;
@@ -912,19 +985,18 @@ SVG Icons - svgicons.sparkk.fr
 	.svg-icon {
 		width: 1.5em;
 		height: 1.5em;
-		margin-left: 5%;
+		margin: 0 auto;
 	}
 
 	.svg-icon-white {
 		width: 1.2em;
 		height: 1.2em;
-		display: inline;
 	}
 
 		.svg-icon-white path,
 		.svg-icon-white polygon,
 		.svg-icon-white rect {
-		fill: #fff;
+		fill: #16a085;
 	}
 
 		.svg-icon path,
