@@ -17,7 +17,8 @@ $(document).ready(function() {
       lazyLoad : true,
       rewindNav: true,
       pagination: true,
-      navigation: true
+      navigation: true,
+      navigationText: ['◀','▶']
  
   });
  
