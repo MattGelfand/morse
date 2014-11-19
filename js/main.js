@@ -40,3 +40,16 @@ $('header').addClass("sticky");
 });
 
 
+$('.addOverflow').click(function() {
+  $('body').addClass('overflowToggle');
+});
+
+$('#close').click(function() {
+  $('body').removeClass('overflowToggle');
+});
+
+$('#about-open').click(function() {
+  $('body').addClass('overflowToggle');
+});
+
+

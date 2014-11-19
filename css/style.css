@@ -110,21 +110,7 @@ NORMALIZE.css
 
 	}
 
-	/*.main-screen:before {
-		content: ' ';
-		position: absolute;
-		top:55.1%;
-		left:50%; 
-		width: 10px;
-		height: 10px;
-		margin-left: -18px;
-		display: block;
-		border-left: 16px solid transparent;
-		border-right: 16px solid transparent;
-		border-top: 16px solid #222;
-	}
-
-	.down {
+	/*.down {
 		padding-top: 1.6em;
 
 		/*-webkit-animation: down 3s ease-in infinite;*/
@@ -445,8 +431,10 @@ NORMALIZE.css
 		background: #16A085;
 		font-size: 14px;
 		color:#fff;
+		font-weight: 700;
 		padding: 1em 2em;
 		letter-spacing:.1em;
+		text-transform: uppercase;
 		border-radius: 3px;
 		font-family: "brandon-grotesque", sans-serif;
 		-webkit-transition:.1s ease all;
@@ -471,10 +459,21 @@ NORMALIZE.css
 
 	/* ===== WORK ===== */
 
-	
+	.work {
+		position: fixed;
+	  	left:-100%;
+		margin: 0 auto;
+		height: 100%;
+		width: 100%;
+ 		z-index: 1;
+ 		background: #fff;
+ 		overflow-y:scroll;
+ 		-webkit-transition:.5s ease-in-out;
+	}
+
 	.work-area {
  		position: relative;
-		-webkit-transition:.4s ease-in-out;
+		-webkit-transition:.5s ease-in-out;
 	}
 
 	.overview {
@@ -509,13 +508,7 @@ NORMALIZE.css
 	}
 
 	#inner {
-		padding-top: 1.6em;
-	}
-
-	.work-contain {
-		max-width: 1000px;
-		margin: 0 auto;
-		padding: 3.2em 0;
+		padding: 1.6em 10em;
 	}
 
 	.hero-inner h1 {
@@ -539,7 +532,7 @@ NORMALIZE.css
 	}
 
 	.work-inner {
-		padding-top: 1.6em 0;
+		padding-top: 1.6em;
 		max-width: 800px;
 		text-align: center;
 		margin: 0 auto;
@@ -548,51 +541,50 @@ NORMALIZE.css
 	.work-inner h1 {
 		font-size: 2.1em;
 		font-weight: 900;
-		padding-top: 1.6em;
+		padding: 1.6em 0 .8em 0;
 		text-transform: uppercase;
 		font-family: 'brandon-grotesque', sans-serif;
 	}
 
-	.work {
-		position: fixed;
-	  	left:-100%;
-		margin: 0 auto;
-		height: 100%;
-		width: 90%;
- 		z-index: 1;
- 		background: #fff;
- 		overflow-y:scroll;
- 		-webkit-transition:1.4s ease-in-out;
-	} 
-
-	.work-hero {
+	.common-hero {
+		background: url('../img/common-hero.png') 0 0 no-repeat;
 		background-attachment: fixed;
 		background-size:cover;
 		height: 600px;
 	}
 
-	.common-hero {
-		background: url('../img/post-its.jpg') 83% 16% no-repeat;
-	}
-
 	.looped-hero {
 		background: url('../img/looped-hero.png') 50% 90% no-repeat;
+		background-attachment: fixed;
+		background-size:cover;
+		height: 600px;
 	}
 
 	.sportscenter-hero {
 		background: url('../img/sportscenter-hero.jpg') 33% 50% repeat;
+		background-attachment: fixed;
+		background-size:cover;
+		height: 600px;
 	}
 
 	.backstory-hero {
 		background: url('../img/backstory-hero.png') 0 0 repeat;
+		background-attachment: fixed;
+		background-size:cover;
+		height: 600px;
 	}
 
 	.nbn-hero {
 		background: url('../img/nbn-hero-alt.jpg') 0 0 repeat;
+		background-attachment: fixed;
+		height: 600px;
 	}
 
 	.barreling-hero {
 		background: url('../img/barreling-hero.jpg') 0 0 no-repeat;
+		background-attachment: fixed;
+		background-size:cover;
+		height: 600px;
 	}
 
 	.hero-inner {
@@ -601,7 +593,7 @@ NORMALIZE.css
 		position: absolute;
 		right: 5%;
 		top:10%;
-		width: 700px;
+		max-width: 700px;
 	}
 
 	#work-open-common:checked ~ .container .common, 
@@ -613,11 +605,11 @@ NORMALIZE.css
 		left: 0;
 		top: 0;
 		z-index: 1;
-		-webkit-transition:1.4s ease-in-out;
+		-webkit-transition:.5s ease-in-out;
 	}
 
-	#close:checked {
-		-webkit-transition:1.4s ease-in-out;
+	#close:checked ~ .container section #balls {
+		-webkit-transition:.4s ease-in-out;
 	}
 
 
@@ -634,10 +626,6 @@ NORMALIZE.css
 	#work-slider-inner img:hover{
 		-webkit-transition:.4s ease-in-out;
 		
-	}
-
-	#work-container {
-	
 	}
 
 	.owl-buttons {
@@ -657,9 +645,9 @@ NORMALIZE.css
 		text-align:center;
 		position: relative;
 		-webkit-transition: opacity 0.5s;
-		height: 500px;
-		width: 500px;
 		font-family: "brandon-grotesque", sans-serif;
+		width: 500px;
+		height: 500px;
 	}
 
 	.overlay:hover .overlay-text {
@@ -682,15 +670,11 @@ NORMALIZE.css
 		margin-left:-250px;
  		position: absolute;
  		background: rgba(255,255,255,.95);
-
-		
 		-webkit-transition: opacity 0.5s;
-		-webkit-transition: all ease 0.5s;
 	}
 
 	.overlay-text-hed {
 		font-size: .9em;
-		padding-bottom: .4em;
 		letter-spacing: 1px;
 		font-weight: 500;
 		position: relative;
@@ -698,7 +682,7 @@ NORMALIZE.css
 
 	.overlay-text-desc {
 		font-size: .3em;
-		padding: .4em 0;
+		padding: .2em 0;
 		color: #16A085;
 		font-weight: 700;
 	}
@@ -777,31 +761,10 @@ NORMALIZE.css
 	#about-open:checked ~ .container .about{
 		top:0;
 		z-index: 1;
-		-webkit-transition:.4s ease-in-out;
 	}
 
-	#about-open:checked ~ .container .main {
-		-webkit-transition:.4s ease-in-out;
-	}
-
-	#about-close:checked {
-		-webkit-transition:.4s ease-in-out;
-	}
-
-	#about-close {
-		position: absolute;
-		right: 3%;
-		display: none;
-		top: 3%;
-		font-size: 40px;
-		color: #fff;
-	}
-
-	#work-close {
-		position: absolute;
-		top:10%;
-		font-size: 60px;
-		color: black;
+	#about-open:checked ~ .container .work-area {
+		 padding-top:50%;
 	}
 
 	/*===== FOOTER =====*/
@@ -923,9 +886,8 @@ NORMALIZE.css
 		text-align: center;
 		color: #9e9e9e;
 		font-family: "brandon-grotesque", sans-serif;
+		padding-top:.2em;
 	}
-
-
 
 	figure {
 		margin:0;
@@ -935,6 +897,21 @@ NORMALIZE.css
 	
 	/*===== Misc. Styles =====*/
 
+
+	#about-close {
+		position: absolute;
+		right: 3%;
+		top: 3%;
+		font-size: 40px;
+		color: #fff;
+	}
+
+	#work-close {
+		position: absolute;
+		top:10%;
+		font-size: 60px;
+		color: black;
+	}
 
 	.character {
 		font-size: 14px;
@@ -946,20 +923,21 @@ NORMALIZE.css
 		text-align: center;
 	}
 
-	.plus-sign {
-		position: absolute;
-		font-size: 155px;
-		right: 15%;
-		bottom: 5%;
-		color: #fff;
-	}
-
 	.hidden {
 		display: block;
 	}
 
+	.overflowToggle {
+		overflow: hidden;
+	}
+
 	.add-color {
 		color: #fff;
+	}
+
+	.hr {
+		font-size: 30px;
+		text-align: center;
 	}
 }
 
