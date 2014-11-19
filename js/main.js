@@ -12,11 +12,11 @@ $('a').smoothScroll();
 
 
 
-/*Owl Slider*/ 
+/*Owl Slider*
 $(document).ready(function() {
  
   $("#work-slider-inner").owlCarousel({
-      items : 2,
+      items : 3,
       lazyLoad : true,
       rewindNav: true,
       pagination: true,
