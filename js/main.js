@@ -1,34 +1,18 @@
+// Fit Text
+
 /*$("#responsive_headline").fitText(1.2, { minFontSize: '20px', maxFontSize: '40px' });*/
 
 
- 
 // Picture element HTML5 shiv
 document.createElement( "picture" );
 
 
-/* Smooth Scrollage */
+// smooth scrollage 
 
 $('a').smoothScroll();
 
 
-
-/*Owl Slider*
-$(document).ready(function() {
- 
-  $("#work-slider-inner").owlCarousel({
-      items : 3,
-      lazyLoad : true,
-      rewindNav: true,
-      pagination: true,
-      navigation: true,
-      navigationText: ['◀','▶']
- 
-  });
- 
-});
-
-
-/* Sticky Header */
+// sticky header 
 
 $(window).scroll(function() {
 	if ($(this).scrollTop() > 1){  
@@ -39,6 +23,8 @@ $('header').addClass("sticky");
   }
 });
 
+
+// add overflow:hidden to body 
 
 $('.addOverflow').click(function() {
   $('body').addClass('overflowToggle');
