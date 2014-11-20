@@ -7,15 +7,18 @@
 document.createElement( "picture" );
 
 
-// smooth scrollage 
+/*
 
 $('a').smoothScroll();
+
+*/
+
 
 
 // sticky header 
 
 $(window).scroll(function() {
-	if ($(this).scrollTop() > 1){  
+if ($(this).scrollTop() > 1){
 $('header').addClass("sticky");
   }
   else{
@@ -24,18 +27,10 @@ $('header').addClass("sticky");
 });
 
 
-// add overflow:hidden to body 
+/* add overflow:hidden to body */
 
-$('.addOverflow').click(function() {
-  $('body').addClass('overflowToggle');
-});
 
-$('#close').click(function() {
-  $('body').removeClass('overflowToggle');
-});
 
-$('#about-open').click(function() {
-  $('body').addClass('overflowToggle');
-});
+
 
 
