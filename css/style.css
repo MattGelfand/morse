@@ -127,7 +127,6 @@ NORMALIZE.css
 		font-size: 100%;
 		min-height: 100%;
 		background: rgba(250,250,250,1);
-	 
 	}
 
 	.container {
@@ -165,20 +164,18 @@ NORMALIZE.css
 	
 	.work {
 		position: fixed;
-	  	left:-100%;
+	  	bottom:-100%;
 		margin: 0 auto;
-		height: 100%;
-		width: 90%;
+		height: 90%;
+		width: 100%;
  		z-index: 2;
  		background: #fff;
  		overflow-y:scroll;
- 		top:0;
- 		
  		-webkit-transition: .2s ease all;
 	}
 
 	.work:target {
-		left: 0;
+		bottom: 0;
 		-webkit-transition:.2s ease all;
 	}
 
@@ -193,33 +190,9 @@ NORMALIZE.css
 	}
 
 	.work p {
-		font-size: .8em;
-		line-height: 1.3;
-		padding: 0 0 1.6em 0;
-	}
-
-	.work-inner {
-		padding-top: 1.6em;
-		max-width: 800px;
-		text-align: center;
-		margin: 0 auto;
-	}
-
-	.work-inner h1 {
-		font-size: 2.1em;
-		font-weight: 900;
-		padding: 1.6em 0 .8em 0;
-		text-transform: uppercase;
-		font-family: 'brandon-grotesque', sans-serif;
-	}
-
-	.hero-inner {
-		background: #fff;
-		padding: 4em;
-		position: relative;
-		left: 5%;
-		top:10%;
-		max-width: 700px;
+		font-size: 1em;
+		line-height: 1.4;
+		padding: 0 0 2.4em 0;
 	}
 
 	.work h1 {
@@ -236,6 +209,27 @@ NORMALIZE.css
 		color: #F94949;
 	}
 
+	.hero-inner {
+		padding: 1.6em;
+		position: static;
+		background: #fff;
+	}
+
+	.process {
+		padding-top: 1.6em;
+		max-width: 800px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.process h1 {
+		font-size: 2.1em;
+		font-weight: 900;
+		padding: 1.6em 0 .8em 0;
+		text-transform: uppercase;
+		font-family: 'brandon-grotesque', sans-serif;
+	}
+
 	.projects {
 		margin: 0 auto;
  	}
@@ -248,23 +242,24 @@ NORMALIZE.css
 		background: #F94949;
 		color: #fff;
 		text-align: center;
-		padding: 3.2em 0;
+		padding: 3.2em 2.4em;
+		margin-top:.8em;
 	}
 
 	.overview h1 {
 		text-transform: uppercase;
 		border: 5px solid white;
-		max-width: 300px;
 		padding: .2em 0;
-		font-size: 2.8em;
+		font-size: 2em;
 		text-align: center;
 		font-family: 'brandon-grotesque', sans-serif;
 		margin: 0 auto;
+		max-width: 200px;
 	}
 
 	.overview p {
-		max-width: 500px;
-		margin: 0 auto;
+		margin-top:1.6em;
+		font-size: 1em;
 	}
 
 	.project-info {
@@ -325,7 +320,6 @@ NORMALIZE.css
 		cursor: pointer;
 	}
 
-
 	.overlay-text-hed {
 		font-size: .1em;
 	}
@@ -339,8 +333,6 @@ NORMALIZE.css
 		width: 150px;
 	}
 	
-
-
 
 	/* ===== ABOUT ===== */
 
@@ -360,6 +352,7 @@ NORMALIZE.css
 		line-height: 1.1;
 		text-align: center;
 		padding-top: .8em;
+		font-family: 'brandon-grotesque', sans-serif;
 	}
 
 	.about-inner p {
@@ -464,6 +457,35 @@ NORMALIZE.css
 
 	/*===== Images =====*/
 
+	.work-hero {
+		
+	}
+
+	.process-group {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	.process-group > div {
+		position: relative;
+		padding: 3.2em 0;
+	}
+
+	figcaption {
+		text-align: center;
+		color: #9e9e9e;
+		font-family: "brandon-grotesque", sans-serif;
+		padding-top:.4em;
+		max-width: 250px;
+		margin: 0 auto;
+	}
+
+	figure {
+		margin:0;
+		padding:0;
+	}
+
+
 
 
 	/*===== Misc. Styles =====*/
@@ -485,6 +507,33 @@ NORMALIZE.css
 		display: none;
 	}
 
+	.btn {
+		background: #F94949;
+		font-size: 14px;
+		color:#fff;
+		font-weight: 700;
+		padding: 1em 2em;
+		letter-spacing:.1em;
+		text-transform: uppercase;
+		border-radius: 3px;
+		font-family: "brandon-grotesque", sans-serif;
+		-webkit-transition:.1s ease all;
+		-moz-transition:.1s ease all;
+		-ms-transition:.1s ease all;
+		-o-transition:.1s ease all;
+		transition:.1s ease all;
+	}
+
+	.btn:hover {
+		box-shadow: 0px 0px 0px 1px #F94949 inset, 0px 0px 0px 2px white inset;
+		text-decoration: none;
+	}
+
+	.btn:active {
+		position: relative;
+		top: 1px;
+	}
+
 	.contain {
 		padding: 0 1.6em;
 	}
@@ -496,6 +545,10 @@ NORMALIZE.css
 	.centered-padded {
 		text-align:center;
 		padding-bottom: 1.6em;
+	}
+
+	.remove-color {
+		color: #fff;
 	}
 
 	/*===== svg =====*/
@@ -618,7 +671,7 @@ NORMALIZE.css
 
 
 	.work {
-		width: 50%;
+		
  	}
 
 
@@ -634,54 +687,98 @@ NORMALIZE.css
 
 
 	.projects {
-		max-width: 1200px;
+		max-width: 800px;
  	}
 
- 	/*
+ 	.overview {
+ 		margin-top: 0;
+ 		padding-left: 14.4em;
+ 		padding-right: 14.4em;
+ 	}
 
+ 	.overview h1 {
+ 		font-size: 2.8em;
+ 		max-width: 300px;
+ 	}
+
+ 	.overview p {
+ 		font-size: 1.6em;
+ 	}
+
+ 	
 	.hero-inner {
-		background: #fff;
-		padding: 4em;
+ 		padding: 4em;
 		position: relative;
 		left: 5%;
 		top:10%;
 		max-width: 700px;
 	}
-
+	
 	.work h1 {
 		font-size: 3em;
 	}
 
 	.work h2 {
 		font-size: .9em;
-		opacity: .7;
-		font-family: "brandon-grotesque", sans-serif;
-		text-transform: uppercase;
-		padding-bottom: 1.6em;
-		color: #F94949;
-	}
-
+ 		font-family: "brandon-grotesque", sans-serif;
+ 	}
+	
 	.work p {
 		font-size: 1.2em;
 		line-height: 1.3;
-		padding: 0 0 1.6em 0;
+		padding: 0 0 2.4em 0;
+	}
+	
+
+	/*===== ABOUT ===== */
+
+
+ 	.about {
+ 		height: 450px;
+ 		text-align: left;
+ 	}
+
+ 	.about-inner {
+ 		max-width: 650px;
+ 	}
+
+ 	.about-inner h1 {
+ 		font-size: 4em;
+ 	}
+
+ 	.about-inner h1, .about-inner p, .contact {
+ 		text-align: left;
+ 	}
+
+ 	.contact {
+		text-align: left;
+ 	}
+
+ 	.contact li {
+ 		margin: 0 2em 0 0;
+ 	}
+	
+	.contact a {
+		font-size:.8em;
 	}
 
-	.work-inner {
-		padding-top: 1.6em;
-		max-width: 800px;
-		text-align: center;
-		margin: 0 auto;
+
+
+	/*===== Footer ===== */
+	
+	footer p {
+		font-size: .9em;
 	}
 
-	.work-inner h1 {
-		font-size: 2.1em;
-		font-weight: 900;
-		padding: 1.6em 0 .8em 0;
-		text-transform: uppercase;
-		font-family: 'brandon-grotesque', sans-serif;
-	}
+	
+	/*===== Text Styles ===== */
 
+
+
+
+
+	/*===== Image Styles ===== */
+	
 	.common-hero {
 		background: url('../img/common-hero.png') 0 0 no-repeat;
 		background-attachment: fixed;
@@ -722,209 +819,19 @@ NORMALIZE.css
 		background-size:cover;
 		height: 600px;
 	}
-
 	
-
-
-	/*===== ABOUT ===== */
-
-
- 	.about {
- 		height: 450px;
- 		text-align: left;
- 	}
-
- 	.about-inner {
- 		max-width: 650px;
- 	}
-
- 	.about-inner h1 {
- 		font-size: 4em;
- 	}
-
- 	.about-inner h1, .about-inner p, .contact {
- 		text-align: left;
- 	}
-
- 	.contact {
-		text-align: left;
- 	}
-
- 	.contact li {
- 		margin: 0 2em 0 0;
- 	}
-	
-	.contact a {
-		font-size:.8em;
-	}
-}
-
-
-	/*===== Footer ===== */
-	
-	footer p {
-		font-size: .9em;
-	}
-
-	
-	/*===== Text Styles =====
-
-	.text-lrg {
-		font-size: 3.8em;
-		line-height: 1.1;
-		font-weight: 500;
-		font-family: 'brandon-grotesque', sans-serif;
-	}
-
-	.text-med {
-		font-size: 1.2em;
-		font-weight: 300;
-		line-height: 1.2;
-		margin: 0 auto;
-	}
-
-	.about-text {
-		line-height: 1.6;
-		padding: .4em 0;
-		font-weight: 300;
-		color: #fff;
-		max-width: 460px;
-		height: auto;
-	}
-
-	.email-text {
-		font-size: 3em;
-		font-family: "brandon-grotesque", sans-serif;
-		font-weight: 300;
-	}
-
-	.work-header {
-		font-weight: 200;
-		text-transform: uppercase;
-		font-size: 3.6em;
-		text-align: left;
-		background: red;
-	}
-
-	.drag-note {
-		font-size: 20px;
-		text-align: center;
-		font-family: "brandon-grotesque", sans-serif;
-		color: #16a085;
-		padding: 3.2em 0 1.6em 0;
-		z-index: 1;
-	}
-
-	.uppercase-small {
-		text-transform: uppercase;
-		font-size: 1.4em;
-		max-width: 250px;
-		margin: 0 auto;
-		font-family: "brandon-grotesque", sans-serif;
-		text-align: center;
-		color:#1a1a1a;
-		font-weight: 800;
-	}
-
-	.head {
-		letter-spacing: 6px;
-	}
-
-	.subhead {
-		font-size: 1em;
-		font-weight: 600;
-		font-family: 'minion-pro-caption', serif;
-		font-style: italic;
-		text-transform: none;
-		margin-right: 6px;
-	}
-
-	/*===== Image Styles =====
-
-	
-	.process-group {
-		max-width: 600px;
-		margin: 0 auto;
-	}
-
-	.process-group > div {
-		position: relative;
-		padding: 3.2em 0;
+	.work-hero {
+		display:block;
 	}
 
 	figcaption {
-		text-align: center;
-		color: #9e9e9e;
-		font-family: "brandon-grotesque", sans-serif;
-		padding-top:.2em;
+		max-width: 550px;
 	}
 
-	figure {
-		margin:0;
-		padding:0;
-	}
-
-	
-	/*===== Misc. Styles =====
+	/*===== Misc. Styles ===== */
 
 
-	.btn {
-		background: #F94949;
-		font-size: 14px;
-		color:#fff;
-		font-weight: 700;
-		padding: 1em 2em;
-		letter-spacing:.1em;
-		text-transform: uppercase;
-		border-radius: 3px;
-		font-family: "brandon-grotesque", sans-serif;
-		-webkit-transition:.1s ease all;
-		-moz-transition:.1s ease all;
-		-ms-transition:.1s ease all;
-		-o-transition:.1s ease all;
-		transition:.1s ease all;
-	}
-
-	.btn:hover {
-		box-shadow: 0px 0px 0px 1px #F94949 inset, 0px 0px 0px 2px white inset;
-		text-decoration: none;
-	}
-
-	.btn:active {
-		position: relative;
-		top: 1px;
-	}
-
-	.character {
-		font-size: 14px;
-		position: relative;
-		display: block;
-		color: #fff;
-		margin-top:2em;
-		margin-bottom: -3em;
-		text-align: center;
-	}
-
-	.hidden {
-		display: block;
-	}
-
-	.overflowToggle {
-		overflow: hidden;
-	}
-
-	.remove-color {
-		color: #fff;
-	}
-
-	.hr {
-		font-size: 30px;
-		text-align: center;
-	}
-
-
-/*=====SVG Icons - svgicons.sparkk.fr =====
-
+} /* ========= End Small Screen Query =========*/
 
 
 
