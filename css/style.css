@@ -146,23 +146,43 @@ NORMALIZE.css
 		text-align: center;
 	}
 
-	.hero {
-		position: relative;
+	header {
+		position: fixed;
 		background: url('../img/bgnoise.png') 0 0 repeat;
 		background-attachment: fixed;
-		padding: 75px 0 0 0;
-		height: 200px;
+		padding: 25px 0 0 0;
+		height: 100px;
+		width: 100%;
 		color: #fff;
+		top:0;
+		z-index: 2;
+		-webkit-transition: all 0.4s ease;
+		-webkit-backface-visibility: hidden;
 	}
 
-	.hero h1 {
+	header h1 {
 		position: relative;		
 	}
+
+	header a:hover  {
+		-webkit-transform:scale(1.1);
+		-webkit-transition:.4s ease-in-out;
+		text-decoration: none;
+	}
+
+	header.sticky  {
+		font-size: 16px;
+		-webkit-transition: all 0.4s ease;
+		z-index: 1;
+		-webkit-backface-visibility: hidden;
+		
+	} 
+
 
 
 	/* ===== WORK ===== */
 	
-	.work {
+	/*.work {
 		position: fixed;
 	  	bottom:-100%;
 		margin: 0 auto;
@@ -177,7 +197,7 @@ NORMALIZE.css
 	.work:target {
 		bottom: 0;
 		-webkit-transition:.2s ease all;
-	}
+	}*/
 
 	.work-close {
 		position: fixed;
@@ -232,6 +252,7 @@ NORMALIZE.css
 
 	.projects {
 		margin: 0 auto;
+		padding-top: 5em;
  	}
 
  	.projects .column {
@@ -341,7 +362,7 @@ NORMALIZE.css
 		border-top: 1px solid #c2c2c2;*/
 		background-attachment: fixed;
 		background-size: cover;
-		height: 700px;
+		height: 750px;
 		background: url('../img/bgnoise.png') 0 0 repeat;
 		color: #fff;
 	}
@@ -411,23 +432,23 @@ NORMALIZE.css
 		font-size: .7em;
 	}
 
-	.process-top {
-		background: #fff;
-	}
-
-	.process-top div {
+	.to-top {
 		text-align: center;
 		max-width: 200px;
 		margin: 0 auto;
-		padding: .8em 0;
+		padding: 1.2em 0;
 	}
 
-	.process-top p {
-		color: #F94949;
-		font-size: .8em;
+	.to-top p {
+		color: #fff;
+		font-size: .9em;
 		font-family: 'brandon-grotesque', sans-serif;
 		text-transform: uppercase;
 		font-weight: 900;
+	}
+
+	.to-top a:hover {
+		text-decoration: none;
 	}
 
 
@@ -554,16 +575,16 @@ NORMALIZE.css
 	/*===== svg =====*/
 
 	.svg-icon {
-		width: .7em;
-		height: .7em;
+		width: .9em;
+		height: .9em;
 		margin: 0 auto;
 		position: relative;
 		top: 30%;
 	}
 
 	.svg-icon-white {
-		width: .6em;
-		height: .6em;
+		width: .7em;
+		height: .7em;
 		position: relative;
 		top: 25%;
 	}
@@ -577,7 +598,7 @@ NORMALIZE.css
 	.svg-icon path,
 	.svg-icon polygon,
 	.svg-icon rect {
-		fill:#222;
+		fill:#fff;
 	}
 
 	.svg-icon circle {
@@ -629,42 +650,7 @@ NORMALIZE.css
 	/* ====== Header ===== */
 
 
-	/*header {
-		position: fixed;
-		height: 7%;
-		top: 0;
-		background: transparent;
-		transition: all 0.4s ease;
-		z-index: 1;
-		webkit-backface-visibility: hidden;
-		font-size: 12px;
-		width: 100%;
-		font-family: "brandon-grotesque", sans-serif;
-	}
-
-	header a {
-		color: #16A085;
-	}
-
-	header a:hover  {
-		-webkit-transform:scale(1.1);
-		-webkit-transition:.1s ease-in-out;
-		text-decoration: none;
-	}
-
-	header.sticky a {
-		display: inline-block;
-		color: #16A085;
-		 
-	}
-
-	header.sticky  {
-		font-size: 16px;
-		transition: all 0.4s ease;
-		z-index: 1;
-		-webkit-backface-visibility: hidden;
-		background:#fff;
-	} 
+	
 
 
 	/* ===== Work ===== */
@@ -768,6 +754,10 @@ NORMALIZE.css
 	
 	footer p {
 		font-size: .9em;
+	}
+
+	.to-top {
+		display: none;
 	}
 
 	

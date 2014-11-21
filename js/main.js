@@ -7,11 +7,11 @@
 document.createElement( "picture" );
 
 
-/*
 
-$('a').smoothScroll();
 
-*/
+/*$('a').smoothScroll();*/
+
+
 
 
 
@@ -26,8 +26,6 @@ $('header').addClass("sticky");
   }
 });
 
-
-/* add overflow:hidden to body */
 
 
 
