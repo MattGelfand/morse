@@ -84,7 +84,7 @@ NORMALIZE.css
 	text-decoration: underline;
 	}
 
-	.fadeIn {
+	/*.fadeIn {
 
 		-webkit-animation:fadeIn ease-in 1;
 		-moz-animation:fadeIn ease-in 1;
@@ -113,7 +113,7 @@ NORMALIZE.css
 		100% {
 			opacity: 1;
 		}
-	}
+	}*/
 
 /*===================================== MAIN MOBILE STYLES ======================================*/
 
@@ -126,12 +126,12 @@ NORMALIZE.css
 	body {
 		font-size: 100%;
 		min-height: 100%;
-		background: rgba(250,250,250,1);
 	}
 
 	.container {
 		margin: 0 auto;
-		position: relative;	
+		position: relative;
+		background: #FAF0E6;	
 	}
 
 	.row {
@@ -172,7 +172,7 @@ NORMALIZE.css
 
 	header.sticky {
 		height: 0;
-	
+		
 		-webkit-transition: all 0.7s ease;
 	}
 
@@ -274,19 +274,22 @@ NORMALIZE.css
 	.projects {
 		margin: 0 auto;
 		padding-top: 5em;
-		background: #f1f1f1;
  	}
 
  	.projects .column {
  		padding:3.2em 0;
+ 	}
+
+ 	.projects a {
+ 		text-decoration: none;
  	}
 	
 	.overview {
 		background: #F94949;
 		color: #fff;
 		text-align: center;
- 		margin-top:.8em;
- 		padding: 3.2em 1.6em;
+		padding: 3.2em 1.6em;
+ 		position: relative;
 	}
 
 	.overview h1 {
@@ -374,26 +377,27 @@ NORMALIZE.css
 		height: 100px;
 		width: 100px;
 	}
+
+	/* ===== PROCESS ===== */
+
+	.flow {
+		
+	
+	}
 	
 
 	/* ===== ABOUT ===== */
 
 	.about {
-		/*background: url('../img/pixel-me.jpg') 0 0 no-repeat;
-		border-top: 1px solid #c2c2c2;*/
-		background-attachment: fixed;
-		background-size: cover;
-		height: 750px;
-		background: url('../img/bgnoise.png') 0 0 repeat;
-		color: #fff;
+		background: #FAF0E6;
+		
 	}
 
 	.about-inner h1 {
- 		font-size: 2.5em;
-		font-weight: 600;
 		line-height: 1.1;
 		text-align: center;
-		padding-top: .8em;
+		margin-top: 1.6em;
+		text-transform: uppercase;
 		font-family: 'brandon-grotesque', sans-serif;
 	}
 
@@ -403,23 +407,19 @@ NORMALIZE.css
 		text-align: center;
  	}
 
- 	.about-inner a {
-		padding: 2px;
-		font-family: 'brandon-grotesque', sans-serif;
-		text-transform: uppercase;
-		font-size: .75em;
-		font-weight: 600;
-		text-decoration: none;
-	}
-
-	.special-anchor {
-		color: #F94949;
-		background: #fff;
-	}
-
  	.contact {
  		text-align: center;
  		display: none;
+ 	}
+
+ 	.read-more {
+ 		text-align: center;
+ 		font-family: 'brandon-grotesque', sans-serif;
+ 		padding: 1.6em 0;
+ 		text-transform: uppercase;
+ 		font-weight: 900;
+ 		font-size: 1em;
+ 		margin-bottom: 3.2em;
  	}
 	
 	.contact li {
@@ -433,19 +433,26 @@ NORMALIZE.css
 	}
 
 	.contact a {
-		background: none;
-		color:#fff;
+		color:#222;
 		font-size: .4em;
 	}
 
 	.contact a:hover {
 		text-decoration: none;
-		border-bottom: 3px solid white;
+		border-bottom: 3px solid #222;
 		-webkit-transition: ease .2s all;
+	}
+
+	.contact-icons {
+		max-width: 400px;
+		margin: 0 auto;
+		text-align: center;
 	}
 
 	.contact-icons li {
 		width: 10%;
+		margin: 0 1em;
+		display: inline-block;
 	}
 
 	
@@ -509,10 +516,6 @@ NORMALIZE.css
 
 	/*===== Images =====*/
 
-	.work-hero {
-		
-	}
-
 	.process-group {
 		max-width: 600px;
 		margin: 0 auto;
@@ -541,8 +544,6 @@ NORMALIZE.css
 
 
 	/*===== Misc. Styles =====*/
-
-
 
 	label {
 		cursor: pointer;
@@ -594,8 +595,41 @@ NORMALIZE.css
 		display: none;
 	}
 
+	.email-link {
+		font-size: .5em;
+		padding: 3.2em 0;
+		display: block;
+	}
+
 	.character {
-		font-size:30px;
+		max-width: 200px;
+		margin: 0 auto;
+		display: block;
+		text-align: center;
+		position: relative;
+		bottom: 25px;
+	}
+
+	.character-dot-a {
+		position: relative;
+		top: 23px;
+
+	}
+
+	.character-dot-b {
+		position: relative;
+		bottom: -5px;
+	}
+
+	.work-arrow {
+		font-size: 1.2em;
+		padding: 0.5em 0.7em;
+		background: #FAFAFA;
+		color: #333;
+		border-radius: 50%;
+		position: absolute;
+		left: 42.5%;
+		bottom: -1.5em;
 	}
 
 	.centered-padded {
@@ -604,6 +638,17 @@ NORMALIZE.css
 
 	#remove-color {
 		color: #fff;
+	}
+
+	#remove-background {
+		background: #fff;
+	}
+
+	.border {
+		border: 5px solid #222;
+		padding: .2em;
+		max-width: 150px;
+		margin-bottom: .8em;
 	}
 
 	/*===== svg =====*/
@@ -617,10 +662,10 @@ NORMALIZE.css
 	}
 
 	.svg-icon-white {
-		width: .7em;
-		height: .7em;
+		width: .5em;
+		height: .5em;
 		position: relative;
-		top: 25%;
+		top: 12%;
 		-webkit-transition:.4s ease all;
 	}
 
@@ -645,6 +690,37 @@ NORMALIZE.css
 	.svg-icon circle {
 		stroke: #4691f6;
 		stroke-width: 1;
+	}
+
+	/*===== LAX TO DA MAX ===== */
+
+	section.module.parallax {
+	  height: 300px;
+	  background-repeat: no-repeat;
+	  margin-top: 3.2em;
+	  }
+
+	section.module.parallax-1 {
+  		background-image: url("../img/post-its-small.jpg");
+	}
+
+	.holder {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	section.module.parallax h1 {
+	  color: rgba(255, 255, 255, 0.8);
+	  font-size: 2em;
+	  margin-top:5em;
+	  font-weight: 700;
+	  text-align: center;
+	  text-transform: uppercase;
+	  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	}
+
+	section.module.content {
+  		padding: 40px 0;
 	}
 	
 	
@@ -708,7 +784,6 @@ NORMALIZE.css
 
 	.projects {
 		max-width: 800px;
-		background: rgba(250,250,250,1);
  	}
 
  	.overview {
@@ -726,7 +801,6 @@ NORMALIZE.css
  		font-size: 1.6em;
  	}
 
- 	
 	.hero-inner {
  		padding: 4em;
 		position: relative;
@@ -760,16 +834,25 @@ NORMALIZE.css
 
 
  	.about {
- 		height: 450px;
+ 		height: 100vh;
  		text-align: left;
+ 		border-top: 1px solid #c2c2c2;
  	}
 
  	.about-inner {
- 		max-width: 650px;
+ 		max-width: 950px;
+ 		margin: 6.4em 0 0 6.4em;
  	}
 
  	.about-inner h1 {
- 		font-size: 4em;
+ 		font-size: 3.6em;
+ 		padding: 0 0 .4em 0;
+ 		border:none;
+ 		margin: 0;
+ 	}
+
+ 	.about-inner p {
+ 		font-size: 1.8em;
  	}
 
  	.about-inner h1, .about-inner p, .contact {
@@ -786,12 +869,24 @@ NORMALIZE.css
  	}
 	
 	.contact a {
-		font-size:.8em;
+		font-size: 1.2em;
 	}
 
 	.contact-icons {
 		display: none;
 	}
+
+	.email-link {
+		display: none;
+	}
+
+	.read-more {
+ 		display: none;
+ 	}
+ 	
+ 	.character {
+ 		display: none;
+ 	}
 
 
 
@@ -799,6 +894,18 @@ NORMALIZE.css
 	
 	footer p {
 		font-size: .9em;
+	}
+
+	section.module.parallax {
+	  height: 600px;
+	  background-position: 50% 50%;
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-size: cover;
+	}
+
+	section.module.parallax-1 {
+  		background-image: url("../img/post-its.jpg");
 	}
 
 	
@@ -864,7 +971,21 @@ NORMALIZE.css
 		width: 150px;
 	}
 
+	/* ===== svg ===== */
+
+	.svg-icon-white {
+		width: .9em;
+		height: .9em;
+		position: relative;
+		top: 30%;
+		-webkit-transition:.4s ease all;
+	}
+
 	/*===== Misc. Styles ===== */
+
+	.work-arrow {
+		left: 48.5%;
+	}
 
 
 } /* ========= End Small Screen Query =========*/
