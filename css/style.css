@@ -84,36 +84,6 @@ NORMALIZE.css
 	text-decoration: underline;
 	}
 
-	/*.fadeIn {
-
-		-webkit-animation:fadeIn ease-in 1;
-		-moz-animation:fadeIn ease-in 1;
-		-ms-animation:fadeIn ease-in 1;
-		-o-animation:fadeIn ease-in 1;
-		animation:fadeIn ease-in 1;
-
-		-webkit-animation-fill-mode:forwards;
-		-moz-animation-fill-mode:forwards;
-		-ms-animation-fill-mode:forwards;
-		-o-animation-fill-mode:forwards;
-		
-
-		-webkit-animation-duration: 1s;
-		-moz-animation-duration: 1s;
-		-ms-animation-duration: 1s;
-		-o-animation-duration: 1s;
-		animation-duration: 1s;
-	}
-
-	@-webkit-keyframes fadeIn {
-		0% {
-			opacity: 0;
-		}
-
-		100% {
-			opacity: 1;
-		}
-	}*/
 
 /*===================================== MAIN MOBILE STYLES ======================================*/
 
@@ -150,7 +120,7 @@ NORMALIZE.css
 		position: fixed;
 		background: url('../img/bgnoise.png') 0 0 repeat;
 		background-attachment: fixed;
-		padding: 25px 0 0 0;
+		padding: 15px 0 0 0;
 		height: 100px;
 		width: 100%;
 		color: #fff;
@@ -183,7 +153,7 @@ NORMALIZE.css
 		opacity: 1;
 		display: block;
 		-webkit-transition: all 0.7s ease;
-		-webkit-transform:scale(1.1) translateX(2px) translateY(20px);
+		-webkit-transform: translateX(2px) translateY(30px);
 	} 
 
 
@@ -207,12 +177,9 @@ NORMALIZE.css
 		-webkit-transition:.2s ease all;
 	}*/
 
-	.work-close h1 {
-		text-transform: uppercase;
-		font-size: 1.3em;
+	.work-close h1 {		
 		margin: 0 auto;
 		font-family: "brandon-grotesque", sans-serif;
-		font-weight: 800;
 	}
 
 	.work-close h2 {
@@ -310,7 +277,7 @@ NORMALIZE.css
 		text-align: center;
 		font-family: 'brandon-grotesque', sans-serif;
 		text-transform: uppercase;
-		color: #787878;
+		color: #242424;
 		padding-top: .8em;
 	}
 
@@ -372,6 +339,7 @@ NORMALIZE.css
 	.lazyOwl {
 		height: 100px;
 		width: 100px;
+		opacity: 1;	
 	}
 
 	/* ===== PROCESS ===== */
@@ -386,6 +354,7 @@ NORMALIZE.css
 
 	.about {
 		background: #FAF0E6;
+		border-top: 1px dotted #222;
 		
 	}
 
@@ -415,7 +384,6 @@ NORMALIZE.css
  		text-transform: uppercase;
  		font-weight: 900;
  		font-size: 1em;
- 		margin-bottom: 3.2em;
  	}
 	
 	.contact li {
@@ -443,6 +411,7 @@ NORMALIZE.css
 		max-width: 400px;
 		margin: 0 auto;
 		text-align: center;
+		padding-top: 1.6em;
 	}
 
 	.contact-icons li {
@@ -494,6 +463,13 @@ NORMALIZE.css
 		margin: 0 auto;
 		font-family: "brandon-grotesque", sans-serif;
 		font-weight: 800;
+	}
+
+	.lowercase-small {
+		font-size: 2.1em;
+		margin: 0 auto;
+		font-family: "brandon-grotesque", sans-serif;
+		font-weight: 600;
 	}
 
 	.head {
@@ -815,7 +791,7 @@ NORMALIZE.css
  	}
 	
 	.work p {
-		font-size: 1.2em;
+		font-size: 1.6em;
 		line-height: 1.3;
 		padding: 0 0 2.4em 0;
 	}
@@ -831,7 +807,6 @@ NORMALIZE.css
 
  	.about {
  		text-align: left;
- 		border-top: 1px solid #c2c2c2;
  	}
 
  	.about-inner {
@@ -882,6 +857,12 @@ NORMALIZE.css
  		display: none;
  	}
 
+ 	#character-block {
+ 		display: block;
+		color:#F94949;
+		bottom: 0;
+ 	}
+
 
 
 	/*===== Footer ===== */
@@ -905,51 +886,54 @@ NORMALIZE.css
 	
 	/*===== Text Styles ===== */
 
-
+	.hero-inner p {
+		font-size:1.3em;
+	}
 
 
 
 	/*===== Image Styles ===== */
 	
 	.common-hero {
-		background: url('../img/common-hero.png') 0 0 no-repeat;
+		background: url('../img/common-pexels.jpg') 0 0 no-repeat;
 		background-attachment: fixed;
 		background-size:cover;
 		height: 600px;
 	}
 
 	.looped-hero {
-		background: url('../img/looped-hero.png') 50% 90% no-repeat;
+		background: url('../img/looped-hero.jpg') 50% 90% no-repeat;
 		background-attachment: fixed;
 		background-size:cover;
 		height: 600px;
 	}
 
 	.sportscenter-hero {
-		background: url('../img/sportscenter-hero.jpg') 33% 50% repeat;
+		background: url('../img/sportscenter-pexels.jpg') 0 0 no-repeat;
 		background-attachment: fixed;
 		background-size:cover;
 		height: 600px;
 	}
 
 	.backstory-hero {
-		background: url('../img/backstory-hero.png') 0 0 repeat;
+		background: url('../img/backstory-pexels.jpg') 0 0 no-repeat;
 		background-attachment: fixed;
 		background-size:cover;
 		height: 600px;
 	}
 
 	.nbn-hero {
-		background: url('../img/nbn-hero-alt.png') 0 0 repeat;
+		background: url('../img/nbn-pexels.jpg') 50% 50% no-repeat;
 		background-attachment: fixed;
+		background-size:cover;
 		height: 600px;
 	}
 
 	.barreling-hero {
-		background: url('../img/barreling-hero.jpg') 0 0 no-repeat;
+		background: url('../img/beer-pexels.jpg') 10% 0 no-repeat;
 		background-attachment: fixed;
-		background-size:cover;
 		height: 600px;
+		background-size: cover;
 	}
 	
 	.work-hero {
@@ -963,6 +947,13 @@ NORMALIZE.css
 	.lazyOwl {
 		height: 150px;
 		width: 150px;
+		opacity: .6;
+		-webkit-transition: opacity 0.2s;
+	}
+
+	.lazyOwl:hover {
+		opacity: 1;
+		-webkit-transition: opacity 0.2s;
 	}
 
 	/* ===== svg ===== */
