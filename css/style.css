@@ -111,7 +111,7 @@ NORMALIZE.css
 	/* ===== Header ===== */
 
 	.header-nojs {
-		max-width: 250px;
+		max-width: 275px;
 		margin: 0 auto;
 		text-align: center;
 	}
@@ -120,8 +120,7 @@ NORMALIZE.css
 		position: fixed;
 		background: url('../img/bgnoise.png') 0 0 repeat;
 		background-attachment: fixed;
-		padding: 15px 0 0 0;
-		height: 100px;
+		height: 90px;
 		width: 100%;
 		color: #fff;
 		top:0;
@@ -154,6 +153,12 @@ NORMALIZE.css
 		display: block;
 		-webkit-transition: all 0.7s ease;
 		-webkit-transform: translateX(2px) translateY(30px);
+	}
+
+	header h2 {
+		font-style: italic;
+		margin-top: 0 !important;
+		font-size: 1.2em !important;
 	} 
 
 
@@ -177,29 +182,24 @@ NORMALIZE.css
 		-webkit-transition:.2s ease all;
 	}*/
 
-	.work-close h1 {		
-		margin: 0 auto;
-		font-family: "brandon-grotesque", sans-serif;
-	}
-
 	.work-close h2 {
-		font-size: 1em;
-		margin-right: 6px;  
-		font-weight: 600;
 		font-style: italic;
+		margin-top: 0;
+		font-size: 1.1em;
 	}
 
 	.work-close:hover {
 		text-decoration: none;
 	}
 
-	.work p {
+	.primary-graph {
 		font-size: 1em;
 		line-height: 1.4;
 		padding: 0 0 2.4em 0;
+		margin-top: 1.6em;
 	}
 
-	.work h1 {
+	.lowercase-head {
 		font-family: "brandon-grotesque", sans-serif;
 		font-size: 2em;
 	}
@@ -209,7 +209,6 @@ NORMALIZE.css
 		opacity: .7;
 		font-family: "brandon-grotesque", sans-serif;
 		text-transform: uppercase;
-		padding-bottom: 1.6em;
 		color: #F94949;
 	}
 
@@ -224,14 +223,6 @@ NORMALIZE.css
 		max-width: 800px;
 		text-align: center;
 		margin: 0 auto;
-	}
-
-	.process h1 {
-		font-size: 2.1em;
-		font-weight: 900;
-		padding: 1.6em 0 .8em 0;
-		text-transform: uppercase;
-		font-family: 'brandon-grotesque', sans-serif;
 	}
 
 	.projects {
@@ -253,22 +244,6 @@ NORMALIZE.css
 		text-align: center;
 		padding: 3.2em 1.6em;
  		position: relative;
-	}
-
-	.overview h1 {
-		text-transform: uppercase;
-		border: 5px solid white;
-		padding: .2em 0;
-		font-size: 2em;
-		text-align: center;
-		font-family: 'brandon-grotesque', sans-serif;
-		margin: 0 auto;
-		max-width: 200px;
-	}
-
-	.overview p {
-		margin-top:1.6em;
-		font-size: 1em;
 	}
 
 	.project-info {
@@ -309,33 +284,6 @@ NORMALIZE.css
 		-webkit-transition: opacity 0.4s;
 	}
 
-	.overlay-container {
-		color: #222;
-		font-size: 3em;
-		opacity: 0;
-		width: 100%;
-		height: 100%;
-		visibility: hidden;
-		top:0;
-		left:0;
-		right:0;
-		bottom: 0;
- 		position: absolute;
- 		background: #F94949;
- 		border-radius: 50%;
-		-webkit-transition: opacity 0.2s;
-		-webkit-transition:.2s linear all;
-		cursor: pointer;
-	}
-
-	.overlay-text-hed {
-		font-size: .1em;
-	}
-
-	.overlay-text-desc {
-		font-size: .1em;
-	}
-
 	.lazyOwl {
 		height: 100px;
 		width: 100px;
@@ -357,7 +305,6 @@ NORMALIZE.css
 		border-top: 1px dotted #222;
 		max-width: 1500px;
 		margin: 0 auto;
-		
 	}
 
 	.about-inner h1 {
@@ -365,11 +312,12 @@ NORMALIZE.css
 		text-align: center;
 		margin-top: 1.6em;
 		text-transform: uppercase;
+		padding: .5em;
 		font-family: 'brandon-grotesque', sans-serif;
 	}
 
 	.about-inner p {
-		padding-top: .8em;
+		padding-top: 1.6em;
 		font-size: 1.1em;
 		text-align: center;
  	}
@@ -459,31 +407,15 @@ NORMALIZE.css
 
 	/*===== Text Styles =====*/
 
-	.uppercase-small {
-		text-transform: uppercase;
+
+	.section-heading {
 		font-size: 1.4em;
+		font-weight: 900;
+		padding: 1.6em 0 .8em 0;
+		text-transform: uppercase;
+		font-family: 'brandon-grotesque', sans-serif;
+		max-width: 500px;
 		margin: 0 auto;
-		font-family: "brandon-grotesque", sans-serif;
-		font-weight: 800;
-	}
-
-	.lowercase-small {
-		font-size: 2.1em;
-		margin: 0 auto;
-		font-family: "brandon-grotesque", sans-serif;
-		font-weight: 600;
-	}
-
-	.head {
-		letter-spacing: 6px;
-	}
-
-	.subhead {
-		font-size: 1em;
-		font-weight: 600;
-		font-family: 'minion-pro-caption', serif;
-		font-style: italic;
-		text-transform: none;
 	}
 
 
@@ -520,17 +452,6 @@ NORMALIZE.css
 
 	label {
 		cursor: pointer;
-	}
-
-	#about-open, 
-	#work-open-common, 
-	#work-open-looped, 
-	#work-open-sportscenter, 
-	#work-open-backstory,
-	#work-open-nbn,
-	#work-open-barreling, 
-	#close {
-		display: none;
 	}
 
 	.contain {
@@ -580,13 +501,12 @@ NORMALIZE.css
 		display: block;
 		text-align: center;
 		position: relative;
-		bottom: 25px;
+		bottom: 10px;
 	}
 
 	.character-dot-a {
 		position: relative;
 		top: 23px;
-
 	}
 
 	.character-dot-b {
@@ -605,7 +525,7 @@ NORMALIZE.css
 		bottom: -1.5em;
 	}
 
-	.centered-padded {
+	.centered {
 		text-align: center;
 	}
 
@@ -618,10 +538,9 @@ NORMALIZE.css
 	}
 
 	.border {
-		border: 5px solid #222;
+		border: 5px solid;
 		padding: .2em;
-		max-width: 150px;
-		margin-bottom: .8em;
+		max-width: 250px;
 	}
 
 	/*===== svg =====*/
@@ -738,17 +657,15 @@ NORMALIZE.css
 
 	
 	/* ====== Header ===== */
-
+	
+	header {
+		height: 110px;
+	}
 
 	
 
 
 	/* ===== Work ===== */
-
-
-	.work {
-		
- 	}
 
 	.work-close:hover {
 		text-decoration: none;
@@ -760,18 +677,8 @@ NORMALIZE.css
  	}
 
  	.overview {
- 		margin-top: 0;
- 		padding-left: 14.4em;
- 		padding-right: 14.4em;
- 	}
-
- 	.overview h1 {
- 		font-size: 2.8em;
- 		max-width: 300px;
- 	}
-
- 	.overview p {
- 		font-size: 1.6em;
+ 		
+ 		padding: 3.2em 14.4em 3.2em 14.4em;
  	}
 
 	.hero-inner {
@@ -780,21 +687,6 @@ NORMALIZE.css
 		left: 5%;
 		top:20%;
 		max-width: 700px;
-	}
-	
-	.work h1 {
-		font-size: 3em;
-	}
-
-	.work h2 {
-		font-size: .9em;
- 		font-family: "brandon-grotesque", sans-serif;
- 	}
-	
-	.work p {
-		font-size: 1.6em;
-		line-height: 1.3;
-		padding: 0 0 2.4em 0;
 	}
 
 	.overlay {
@@ -808,22 +700,14 @@ NORMALIZE.css
 
  	.about {
  		text-align: left;
+ 		padding-top: 3.2em;
  	}
 
  	.about-inner {
  		max-width: 950px;
- 		margin: 6.4em 0 0 6.4em;
- 	}
-
- 	.about-inner h1 {
- 		padding: 0 0 .4em 0;
- 		border:none;
- 		margin: 0;
- 	}
-
- 	.about-inner p {
- 		
- 	}
+ 		padding:.8em;
+ 		margin: 0 auto;
+ 	}	
 
  	.about-inner h1, .about-inner p, .contact {
  		text-align: left;
@@ -837,10 +721,6 @@ NORMALIZE.css
  	.contact li {
  		margin: 0 2em 0 0;
  	}
-	
-	.contact a {
-		font-size: .8em;
-	}
 
 	.contact-icons {
 		display: none;
@@ -868,9 +748,6 @@ NORMALIZE.css
 
 	/*===== Footer ===== */
 	
-	footer p {
-		font-size: .9em;
-	}
 
 	section.module.parallax {
 	  height: 600px;
@@ -887,9 +764,43 @@ NORMALIZE.css
 	
 	/*===== Text Styles ===== */
 
-	.hero-inner p {
-		font-size:1.3em;
+	.section-heading {
+		font-size: 2.4em;
 	}
+
+	.lowercase-head {
+		font-size: 2.7em;
+	}
+
+	.work h2 {
+		font-size: .9em;
+ 		font-family: "brandon-grotesque", sans-serif;
+ 		padding-bottom: 1.6em;
+ 	}
+	
+	.primary-graph {
+		font-size: 1.6em;
+		line-height: 1.3;
+		padding: 0 0 2.4em 0;
+	}
+
+	.hero-inner p {
+		margin-top:0;
+	}
+
+	footer p {
+		font-size: .9em;
+	}
+
+	.contact a {
+		font-size: .8em;
+	}
+
+	.about-inner h1 {
+ 		padding: 0 0 .4em 0;
+ 		border:none;
+ 		margin: 0;
+ 	}
 
 
 
@@ -899,41 +810,41 @@ NORMALIZE.css
 		background: url('../img/common-pexels.jpg') 0 55% no-repeat;
 		background-attachment: fixed;
 		background-size:cover;
-		height: 600px;
+		height: 750px;
 	}
 
 	.looped-hero {
 		background: url('../img/looped-hero.jpg') 50% 90% no-repeat;
 		background-attachment: fixed;
 		background-size:cover;
-		height: 600px;
+		height: 750px;
 	}
 
 	.sportscenter-hero {
 		background: url('../img/sportscenter-pexels.jpg') 0 0 no-repeat;
 		background-attachment: fixed;
 		background-size:cover;
-		height: 600px;
+		height: 750px;
 	}
 
 	.backstory-hero {
 		background: url('../img/backstory-pexels.jpg') 0 0 no-repeat;
 		background-attachment: fixed;
 		background-size:cover;
-		height: 600px;
+		height: 750px;
 	}
 
 	.nbn-hero {
 		background: url('../img/nbn-pexels.jpg') 50% 50% no-repeat;
 		background-attachment: fixed;
 		background-size:cover;
-		height: 600px;
+		height: 750px;
 	}
 
 	.barreling-hero {
 		background: url('../img/beer-pexels.jpg') 10% 0 no-repeat;
 		background-attachment: fixed;
-		height: 600px;
+		height: 750px;
 		background-size: cover;
 	}
 	
