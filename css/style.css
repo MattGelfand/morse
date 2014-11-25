@@ -355,6 +355,8 @@ NORMALIZE.css
 	.about {
 		background: #FAF0E6;
 		border-top: 1px dotted #222;
+		max-width: 1500px;
+		margin: 0 auto;
 		
 	}
 
@@ -482,7 +484,6 @@ NORMALIZE.css
 		font-family: 'minion-pro-caption', serif;
 		font-style: italic;
 		text-transform: none;
-		margin-right: 9px;
 	}
 
 
