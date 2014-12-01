@@ -389,6 +389,11 @@ NORMALIZE.css
 		display: inline-block;
 	}
 
+	.mail {
+		border: 4px solid;
+		padding: 0.8em;
+	}
+
 	
 
 	/*===== Footer ===== */
