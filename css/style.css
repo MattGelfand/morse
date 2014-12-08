@@ -161,6 +161,10 @@ NORMALIZE.css
 		opacity: 0;
 	}
 
+	.project-head {
+		font-family: 'brandon-grotesque', sans-serif;
+	}
+
 	/*header.sticky {
 		height: 0;
 		padding: 0;
@@ -378,6 +382,18 @@ NORMALIZE.css
 		-webkit-transform:scale(1.1);
 		-webkit-transition:.2s ease all;
 	}
+	
+	.overlay-process {
+		background: black;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 450px;
+		width: 450px;
+	}
+
 	
 
 	/* ===== ABOUT ===== */
@@ -763,12 +779,6 @@ NORMALIZE.css
 
 
 
-
-/* Larger screen breakpoint (1400px) */
-@media (min-width: 45em) {	
-
-}
-
 /* Medium screen breakpoint (960px) */
 @media (min-width: 60rem) {
   
@@ -970,7 +980,6 @@ NORMALIZE.css
 
 	.project-head {
 		font-size: 2.8em;
-		font-family: 'brandon-grotesque', sans-serif;
 	}
 
 	.work h2 {
