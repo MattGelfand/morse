@@ -815,6 +815,12 @@ NORMALIZE.css
 		max-width: 600px;
  	}
 
+ 	.header-container {
+ 		max-width: 1200px;
+ 		position: relative;
+ 		margin: 0 auto;
+ 	}
+
 	.heading {
 		margin: 0 auto;
 		text-align: center;
