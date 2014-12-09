@@ -104,10 +104,6 @@ NORMALIZE.css
 		background: #fff;	
 	}
 
-	.row {
-		padding: 0 1.2em;
-	}
-
 	/* ===== Header ===== */
 
 	.header-nojs {
@@ -214,6 +210,10 @@ NORMALIZE.css
 		-webkit-transition:.2s ease all;
 	}*/
 
+	.work {
+
+	}
+
 	.work-close h2 {
 		margin-top: 0;
 		font-size: 1.1em;
@@ -226,7 +226,6 @@ NORMALIZE.css
 	.primary-graph {
 		font-size: 1.1em;
 		line-height: 1.4;
-		padding: 0 0 2.4em 0;
 		margin-top: 1.6em;
 	}
 
@@ -264,17 +263,13 @@ NORMALIZE.css
 		color: #F94949;
 	}
 
-	.hero-inner {
-		padding: 8em 1.6em 3.2em 1.6em;
-		position: static;
-		background: #fff;
+	.hero-container {
+		padding-top: 0;
 	}
 
-	.process {
-		padding-top: 1.6em;
-		max-width: 800px;
-		text-align: center;
-		margin: 0 auto;
+	.hero-inner {
+ 		background: #fff;
+ 		padding: 8em 0;
 	}
 
 	.projects {
@@ -289,13 +284,29 @@ NORMALIZE.css
  	.projects a {
  		text-decoration: none;
  	}
+
+ 	#project-container {
+		
+ 	}
+
+ 	.project-container-inner {
+		background: #fff;
+	}
+
+	.project-container-inner > div {
+		margin: 3.2em 0;
+	}
+
+	.project-container-inner img {
+		padding-top: 1.6em;
+	}
 	
 	.overview {
 		background: #F94949;
 		color: #fff;
-		text-align: center;
-		padding: 3.2em 1.6em;
+		padding: 0 0 1.6em 0;
  		position: relative;
+ 		text-align: left;
 	}
 
 	.project-info {
@@ -350,48 +361,60 @@ NORMALIZE.css
 		background: #fff;
 		max-width: 1000px;
 		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	.process-squares {
+		padding-top:3.2em;
 	}
 
 	.process-container li {
 		display: inline-block;
 		width: 100%;
-		height: 300px;
 		background: rgba(0,0,0,.025);
 		position: relative;
- 	}
+		overflow: hidden;
+  	}
 
-	.process-container li p {
-		font-family: 'brandon-grotesque';
-		text-transform: uppercase;
- 		font-size: 1em;
-		letter-spacing: 1px;
-		padding-top:.8em;
+  	.process-container li:hover > div,
+	.process-container li:hover > article {
+		-webkit-transform:translateY(-100%);
 	}
 
 	.process-container li > div {
   		position: absolute;
 		margin: auto;
    		top: 0; left: 0; bottom: 0; right: 0;
-   		overflow: hidden;
-   		width: 50%;
-   		height: 50%;
-		-webkit-transition:.2s ease all;
-	}
-
-	.process-container li > div:hover {
-		-webkit-transform:scale(1.1);
-		-webkit-transition:.2s ease all;
+    	width: 50%;
+   		height: 51%;
+   		font-family: 'brandon-grotesque';
+   		font-size: 1.3em;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		color: #fff;
+		-webkit-transition:.3s ease all;
 	}
 	
 	.overlay-process {
-		background: black;
+		background: transparent;
 		position: absolute;
-		top: 0;
+		top: 100%;
 		left: 0;
 		right: 0;
 		bottom: 0;
 		height: 450px;
-		width: 450px;
+		width: 100%;
+ 		-webkit-transition:.3s ease all;
+	}
+
+	.overlay-process p {
+		text-align: left;
+		padding: 4.8em 1.6em;
+		font-family: 'minion-pro-caption', serif;
+		text-transform: none;
+		letter-spacing: none;
+		color: #fff;
+		font-size: 1.1em;
 	}
 
 	
@@ -544,8 +567,12 @@ NORMALIZE.css
 	/*===== Images =====*/
 
 	.process-group {
-		max-width: 600px;
-		margin: 0 auto;
+		text-align: center;
+		padding-top: 4em;
+	}
+
+	.process-group img {
+		max-width: 75%;
 	}
 
 	.process-group > div {
@@ -555,8 +582,7 @@ NORMALIZE.css
 
 	figcaption {
 		text-align: center;
-		color: #9e9e9e;
-		font-family: "brandon-grotesque", sans-serif;
+		color: #222;
 		padding-top:.4em;
 		max-width: 250px;
 		margin: 0 auto;
@@ -568,8 +594,6 @@ NORMALIZE.css
 	}
 
 
-
-
 	/*===== Misc. Styles =====*/
 
 	label {
@@ -577,7 +601,8 @@ NORMALIZE.css
 	}
 
 	.contain {
-		padding: 0 1.6em;
+		max-width: 350px;
+		margin: 0 auto;
 	}
 
 	.btn {
@@ -595,6 +620,8 @@ NORMALIZE.css
 		-ms-transition:.1s ease all;
 		-o-transition:.1s ease all;
 		transition:.1s ease all;
+		position: relative;
+		top: 3.2em;
 	}
 
 	.btn:hover {
@@ -605,6 +632,10 @@ NORMALIZE.css
 	.btn:active {
 		position: relative;
 		top: 1px;
+	}
+
+	.process-icon {
+		padding-bottom: .8em;
 	}
 
 	.hidden {
@@ -640,19 +671,12 @@ NORMALIZE.css
 		font-size: 30px; 
 		margin-top: -1em;
 		opacity: .8;
-		color: #EA4A3E;
 		text-align: center;
+		color: #F94949;
 	}
 
 	.work-arrow {
-		font-size: 1.2em;
-		padding: 0.5em 0.7em;
-		background: #fff;
-		color: #333;
-		border-radius: 50%;
-		position: absolute;
-		left: 42.5%;
-		bottom: -1.5em;
+		display: none;
 	}
 
 	.centered {
@@ -665,17 +689,6 @@ NORMALIZE.css
 
 	#remove-background {
 		background: #fff;
-	}
-
-	.border {
-		border: 5px solid;
-		padding: .2em;
-		max-width: 250px;
-	}
-
-	.contain {
-		padding: 1.6em;
-		margin-top:0;
 	}
 
 	/*===== svg =====*/
@@ -812,6 +825,10 @@ NORMALIZE.css
 	float: right; 
 	}
 
+	.row {
+		padding: 0 1.2em;
+	}
+
 
 	
 	/* ====== Header ===== */
@@ -875,15 +892,14 @@ NORMALIZE.css
 		max-width: 800px;
  	}
 
- 	.overview {
- 		padding: 3.2em 14em;
+ 	.hero-container {
+ 		padding-top: 10em;
  	}
 
 	.hero-inner {
- 		padding: 4em;
+ 		padding: 2em 2em 6em 2em;
 		position: relative;
-		left: 5%;
-		top:20%;
+		right: 0;
 		max-width: 700px;
 	}
 
@@ -898,6 +914,22 @@ NORMALIZE.css
 		width: 450px;
 		height: 450px;
 
+	}
+
+	.process-container li > div {
+  		 
+   		font-size: 1.1em;
+	 
+	}
+
+
+	.overlay-process p {
+		 
+		font-size: 1.1em;
+	}
+
+	.overview {
+		padding-bottom: 6em;
 	}
 	
 
@@ -990,9 +1022,7 @@ NORMALIZE.css
 	
 	.primary-graph {
 		font-size: 1.6em;
-		line-height: 1.4;
-		padding: 0 0 2.4em 0;
-		font-style: normal;
+  		font-style: normal;
 	}
 
 	.primary-graph-home {
@@ -1126,11 +1156,23 @@ NORMALIZE.css
 
 	.work-arrow {
 		left: 48.5%;
+		font-size: 1.2em;
+		padding: 0.5em 0.7em;
+		background: #fff;
+		color: #333;
+		border-radius: 50%;
+		position: absolute;
+		bottom: -1.5em;
+		display: block;
 	}
 
 	.underline {
 		font-size: 65px;
 		margin-top: -1.2em;
+	}
+
+	.contain {
+		max-width: 1000px;
 	}
 
 	
