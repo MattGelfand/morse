@@ -374,7 +374,8 @@ NORMALIZE.css
 		overflow: hidden;
 		display: inline-block;
 		margin-top: -12px;
-		margin-bottom: -12px;
+ 		height: 500px;
+		cursor: pointer;
   	}
 
   	.process-head {
@@ -392,7 +393,7 @@ NORMALIZE.css
 		margin: auto;
    		top: 0; left: 0; bottom: 0; right: 0;
     	width: 50%;
-   		height: 51%;
+   		height: 50%;
    		font-family: 'brandon-grotesque';
    		font-size: 1.3em;
 		letter-spacing: 1px;
@@ -451,14 +452,14 @@ NORMALIZE.css
 	}
 
 	.contact-icons {
-		max-width: 400px;
-		margin: 0 auto;
-		text-align: center;
-		padding-top: 1.6em;
+		 
+		 
+		margin-left: -1em; 
+		padding-top: 1.2em;
 	}
 
 	.contact-icons li {
-		width: 7%;
+		width: 6%;
 		margin: 0 1em;
 		display: inline-block;
 	}
@@ -468,7 +469,7 @@ NORMALIZE.css
 		padding: 0.8em;
 	}
 
-	.contact-footer {
+	/*.contact-footer {
 		background: url('../img/footer-img-small.jpg') 0 0 no-repeat;
 		background-size: cover;
 		height: 300px;
@@ -487,7 +488,7 @@ NORMALIZE.css
 		display: table-cell;
   		vertical-align: middle;
    		font-size: .8em;
-	}
+	}*/
 
 
 	/*===== Footer ===== */
@@ -812,7 +813,6 @@ NORMALIZE.css
  	}
 
  	.header-container {
- 		max-width: 1200px;
  		position: relative;
  		margin: 0 auto;
  	}
@@ -982,6 +982,12 @@ NORMALIZE.css
 		font-size: 1em !important;
 	}
 
+	.secondary-graph {
+		font-size: 1.1em;
+		padding-top: 1.6em;
+		color: #e5e5e5;
+	}
+
 	.hero-inner p {
 		margin-top:0;
 	}
@@ -992,10 +998,6 @@ NORMALIZE.css
 
 	.contact a {
 		font-size: .8em;
-	}
-
-	.contact-footer h1 {
-		font-size: 3.6em;
 	}
 
 	.about-inner h1 {
@@ -1086,7 +1088,12 @@ NORMALIZE.css
 		max-width: 550px;
 	}
 
- 	.contact-footer {
+	.contact-footer {
+		background: #2f2f2f;
+		padding: 3.2em 0;
+	}
+
+ 	/*.contact-footer {
  		background: url('../img/footer-img.jpg') 50% 50% no-repeat;
  		height: 600px;
  		background-size: cover;
@@ -1096,7 +1103,7 @@ NORMALIZE.css
 
  	.contact-footer-inner {
  		padding-top: 10em;
- 	}
+ 	}*/
 
 	/* ===== svg ===== */
 
