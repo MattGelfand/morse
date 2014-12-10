@@ -364,17 +364,22 @@ NORMALIZE.css
 	}
 
 	.process-squares {
-		padding-top:3.2em;
+		padding: 3.2em 0;
+		margin: 0 auto;
 	}
 
 	.process-squares li {
-		width: 100%;
 		background: rgba(0,0,0,.025);
 		position: relative;
 		overflow: hidden;
 		display: inline-block;
 		margin-top: -12px;
 		margin-bottom: -12px;
+  	}
+
+  	.process-head {
+  		font-weight: 400;
+  		font-size: 1em;
   	}
 
   	.process-squares li:hover > div,
@@ -422,39 +427,7 @@ NORMALIZE.css
 
 	/* ===== ABOUT ===== */
 
-	.about {
- 		max-width: 1500px;
-		margin: 0 auto;
-	}
-
-	.about-inner h1 {
-		line-height: 1.1;
-		text-align: center;
-		margin-top: 1.6em;
-		text-transform: uppercase;
-		padding: .5em;
-		font-family: 'brandon-grotesque', sans-serif;
-	}
-
-	.about-inner p {
-		padding-top: 1.6em;
-		font-size: 1.1em;
-		text-align: center;
- 	}
-
- 	.contact {
- 		text-align: center;
- 		display: none;
- 	}
-
- 	.read-more {
- 		text-align: center;
- 		font-family: 'brandon-grotesque', sans-serif;
- 		padding: 1.6em 0;
- 		text-transform: uppercase;
- 		font-weight: 900;
- 		font-size: 1em;
- 	}
+	
 	
 	.contact li {
 		display: inline-block; 
@@ -504,10 +477,10 @@ NORMALIZE.css
 
 	.contact-footer-inner {
 		display: table;
-  		max-width: 500px;
+  		
   		text-align: center;
   		margin: 0 auto;
-  		padding-top: 6em;
+  		padding-top: 9em;
 	}
 
 	.contact-footer h1 {
@@ -516,7 +489,6 @@ NORMALIZE.css
    		font-size: .8em;
 	}
 
-	
 
 	/*===== Footer ===== */
 
@@ -602,7 +574,7 @@ NORMALIZE.css
 	}
 
 	.contain {
-		max-width: 350px;
+		max-width: 300px;
 		margin: 0 auto;
 	}
 
@@ -852,7 +824,7 @@ NORMALIZE.css
 
 	nav {
 		position: absolute;
-		top:45%;
+		top:67%;
 		right: 0;
 		display: block;
 	}
@@ -900,7 +872,7 @@ NORMALIZE.css
 		max-width: 700px;
 	}
 
-	.overlay {
+	.overlay  /* work spheres */ {
 		width: 150px;
 		height: 150px;
 	}
@@ -931,21 +903,6 @@ NORMALIZE.css
 
 	/*===== ABOUT ===== */
 
-
- 	.about {
- 		text-align: left;
- 		padding-top: 3.2em;
- 	}
-
- 	.about-inner {
- 		max-width: 950px;
- 		padding:.8em;
- 		margin: 0 auto;
- 	}	
-
- 	.about-inner h1, .about-inner p, .contact {
- 		text-align: left;
- 	}
 
  	.contact {
 		text-align: left;
@@ -1055,11 +1012,14 @@ NORMALIZE.css
  	.holder p {
 		font-size: 3em;
 	}
-
-	.process-container li p {
+	
+	.process-squares li p {
 		font-size: 1.4em;
 	}
-
+	
+	.process-head {
+		font-size: 1.4em;
+	}
 
 
 	/*===== Image Styles ===== */
@@ -1175,6 +1135,7 @@ NORMALIZE.css
 		padding: 0;
 	}
 
+	
 	
 
 } 
